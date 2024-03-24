@@ -2181,7 +2181,7 @@ button:focus,
 .contact-section .contact-area::before {
   position: absolute;
   content: '';
-
+  background-image: url("../img/map-2.png");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -2194,7 +2194,7 @@ button:focus,
 .contact-section .contact-area::after {
   position: absolute;
   content: '';
-
+  background-image: url(../img/contact-shape-two.png);
   background-position: center center;
   background-size: cover;
   width: 100px;
@@ -2223,7 +2223,7 @@ button:focus,
 .contact-section .contact-area .contact-img::before {
   position: absolute;
   content: '';
-
+  background-image: url(../img/contact-shape.png);
   background-position: center center;
   background-size: cover;
   width: 125px;

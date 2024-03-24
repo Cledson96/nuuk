@@ -7,6 +7,11 @@
     display: flex;
 }
 
+a {
+    text-decoration: none;
+
+}
+
 .menu-header li {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -24,15 +29,33 @@
 }
 
 .slick-dots {
-    bottom: 0 !important;
+    bottom: 10px !important;
     background-color: transparent !important;
 }
 
+.slick-dots li {
+    background-color: transparent !important;
+
+
+    width: 30px !important;
+    height: 30px !important;
+
+}
+
+.slick-dots li.slick-active {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px !important;
+    border-color: white !important;
+}
+
 .slick-dots li button:before {
-
-    font-size: 22px !important;
+    font-size: 20px !important;
     color: white !important;
-
+    display: flex;
+    margin: 0 auto;
+    top: 4px !important;
+    left: 4px !important;
 }
 
 .image-carrousel {

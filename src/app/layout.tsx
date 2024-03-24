@@ -4,7 +4,7 @@ import '@/css/reset.css';
 import '@/css/style.css';
 import '@/css/globals.css';
 
-import { Header } from '@/components';
+import { Header, Footer } from '@/components';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -22,6 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
