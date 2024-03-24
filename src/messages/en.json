@@ -6,11 +6,68 @@
     },
     "slider": {
       "hospitality": {
-        "title": "Ensuring Your Comfort, Our Duty",
-        "description": "We prioritize your comfort and safety in our hospitality services. Our team ensures high standards of hygiene and personalized care for a memorable stay. Your satisfaction is our commitment.",
+        "title": "Ensuring Your Comfort, Our Commitment",
+        "description": "We prioritize your comfort and safety in our hospitality services. Our team ensures high hygiene standards and personalized care for a memorable stay. Your satisfaction is our commitment.",
+        "button": "Learn more"
+      },
+      "cleaning_commercial": {
+        "title": "Excellence in Commercial Cleaning",
+        "description": "We offer complete cleaning solutions for commercial environments, keeping your space impeccable and welcoming.",
+        "button": "Learn more"
+      },
+      "cleaning_residential": {
+        "title": "Your Home Clean and Cozy",
+        "description": "Customized residential cleaning services to ensure your comfort and well-being at home.",
+        "button": "Learn more"
+      },
+      "industry": {
+        "title": "Innovation and Industrial Efficiency",
+        "description": "Advanced solutions to boost your industry's productivity and efficiency.",
+        "button": "Learn more"
+      },
+      "administration": {
+        "title": "Exemplary Administrative Management",
+        "description": "Customized administrative services to optimize your company's processes.",
+        "button": "Learn more"
+      },
+      "construction": {
+        "title": "High Standard Civil Construction",
+        "description": "Civil construction projects and executions that combine quality, safety, and innovation.",
         "button": "Learn more"
       }
     },
+    "services": {
+      "title": "Provided Services",
+      "button": "Learn more",
+      "description": "Provision of high-quality and excellent services",
+      "service": {
+        "administration": {
+          "title": "Administrative",
+          "description": "Management and administrative support for businesses."
+        },
+        "cleaning_commercial": {
+          "title": "Commercial Cleaning",
+          "description": "Cleaning services for commercial environments, ensuring hygiene and comfort."
+        },
+        "construction": {
+          "title": "Construction",
+          "description": "Quality and safe civil construction projects and executions."
+        },
+        "hospitality": {
+          "title": "Hospitality",
+          "description": "Excellence in hospitality and accommodation services."
+        },
+        "industry": {
+          "title": "Industry",
+          "description": "Innovative industrial solutions to optimize production."
+        },
+        "cleaning_residential": {
+          "title": "Residential Cleaning",
+          "description": "Cleaning and organizing services for homes, providing well-being."
+        }
+      }
+    },
+
     "page": {
       "get-started": "Get started by editing",
       "by": "By",
@@ -31,5 +88,39 @@
         "content": "Instantly deploy yout Next.js site to a shareable URL with Vercel."
       }
     }
+  },
+  "header": {
+    "home": {
+      "title": "Home",
+      "button": "Get Quote",
+      "children": {
+        "service": "Services"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "children": {
+        "administration": {
+          "title": "Administrative"
+        },
+        "cleaning_commercial": {
+          "title": "Commercial Cleaning"
+        },
+        "construction": {
+          "title": "Construction"
+        },
+        "hospitality": {
+          "title": "Hospitality"
+        },
+        "industry": {
+          "title": "Industry"
+        },
+        "cleaning_residential": {
+          "title": "Residential Cleaning"
+        }
+      }
+    },
+    "about": "About",
+    "contact": "Contact"
   }
 }

@@ -6,11 +6,69 @@
     },
     "slider": {
       "hospitality": {
-        "title": "Garantindo Seu Conforto, Nossa Obrigação",
+        "title": "Garantir o seu conforto é nossa obrigação",
         "description": "Priorizamos seu conforto e segurança em nossos serviços de hotelaria. Nossa equipe garante altos padrões de higiene e cuidado personalizado para uma estadia memorável. Sua satisfação é nosso compromisso.",
+        "button": "Saiba mais"
+      },
+      "cleaning_commercial": {
+        "title": "Excelência em limpeza comercial",
+        "description": "Oferecemos soluções completas de limpeza para ambientes comerciais, mantendo o seu espaço sempre impecável e acolhedor.",
+        "button": "Saiba mais"
+      },
+      "cleaning_residential": {
+        "title": "Sua casa limpa e aconchegante",
+        "description": "Serviços de limpeza residencial personalizados para garantir o seu conforto e bem-estar no lar.",
+        "button": "Saiba mais"
+      },
+      "industry": {
+        "title": "Inovação e Eficiência Industrial",
+        "description": "Soluções avançadas para aumentar a produtividade e a eficiência da sua indústria.",
+        "button": "Saiba mais"
+      },
+      "administration": {
+        "title": "Gestão Administrativa Exemplar",
+        "description": "Serviços administrativos sob medida para otimizar os processos da sua empresa.",
+        "button": "Saiba mais"
+      },
+      "construction": {
+        "title": "Construção Civil de Alto Padrão",
+        "description": "Projetos e execuções em construção civil que combinam qualidade, segurança e inovação.",
         "button": "Saiba mais"
       }
     },
+
+    "services": {
+      "title": "Serviços Prestados",
+      "button": "Saiba mais",
+      "description": "Prestação de serviços de alta qualidade e excelência",
+      "service": {
+        "administration": {
+          "title": "Administrativo",
+          "description": "Gestão e suporte administrativo para empresas e negócios."
+        },
+        "cleaning_commercial": {
+          "title": "Limpeza Comercial",
+          "description": "Serviços de limpeza para ambientes comerciais, garantindo higiene e conforto."
+        },
+        "construction": {
+          "title": "Construção Civil",
+          "description": "Projetos e execuções de obras civis com qualidade e segurança."
+        },
+        "hospitality": {
+          "title": "Hotelaria",
+          "description": "Serviços de excelência em hospitalidade e acomodações."
+        },
+        "industry": {
+          "title": "Indústria",
+          "description": "Soluções industriais inovadoras para otimizar a produção."
+        },
+        "cleaning_residential": {
+          "title": "Limpeza Residencial",
+          "description": "Limpeza e organização para residências, proporcionando bem-estar."
+        }
+      }
+    },
+
     "page": {
       "get-started": "Comece editando o arquivo",
       "by": "Por",
@@ -31,5 +89,39 @@
         "content": "Faça deploy instantaneamente de seu site Next.js em uma URL compartilhável com a Vercel."
       }
     }
+  },
+  "header": {
+    "home": {
+      "title": "Início",
+      "button": "Faça uma cotação",
+      "children": {
+        "service": "Serviços"
+      }
+    },
+    "services": {
+      "title": "Serviços",
+      "children": {
+        "administration": {
+          "title": "Administrativo"
+        },
+        "cleaning_commercial": {
+          "title": "Limpeza Comercial"
+        },
+        "construction": {
+          "title": "Construção Civil"
+        },
+        "hospitality": {
+          "title": "Hotelaria"
+        },
+        "industry": {
+          "title": "Indústria"
+        },
+        "cleaning_residential": {
+          "title": "Limpeza Residencial"
+        }
+      }
+    },
+    "about": "Sobre",
+    "contact": "Contato"
   }
 }

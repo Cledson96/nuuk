@@ -6,11 +6,68 @@
     },
     "slider": {
       "hospitality": {
-        "title": "Ensuring Your Comfort, Our Duty",
-        "description": "Nous donnons la priorité à votre confort et sécurité dans nos services hôteliers. Notre équipe assure des normes élevées d'hygiène et un soin personnalisé pour un séjour mémorable. Votre satisfaction est notre engagement.",
-        "button": "en savoir plus"
+        "title": "Assurer Votre Confort, Notre Engagement",
+        "description": "Nous donnons la priorité à votre confort et sécurité dans nos services hôteliers. Notre équipe assure des normes d'hygiène élevées et un soin personnalisé pour un séjour mémorable. Votre satisfaction est notre engagement.",
+        "button": "En savoir plus"
+      },
+      "cleaning_commercial": {
+        "title": "Excellence en Nettoyage Commercial",
+        "description": "Nous offrons des solutions de nettoyage complètes pour les environnements commerciaux, en maintenant votre espace impeccable et accueillant.",
+        "button": "En savoir plus"
+      },
+      "cleaning_residential": {
+        "title": "Votre Maison Propre et Confortable",
+        "description": "Services de nettoyage résidentiel personnalisés pour assurer votre confort et bien-être chez vous.",
+        "button": "En savoir plus"
+      },
+      "industry": {
+        "title": "Innovation et Efficacité Industrielle",
+        "description": "Des solutions avancées pour booster la productivité et l'efficacité de votre industrie.",
+        "button": "En savoir plus"
+      },
+      "administration": {
+        "title": "Gestion Administrative Exemplaire",
+        "description": "Services administratifs personnalisés pour optimiser les processus de votre entreprise.",
+        "button": "En savoir plus"
+      },
+      "construction": {
+        "title": "Construction Civile de Haut Standard",
+        "description": "Des projets et réalisations de construction civile qui combinent qualité, sécurité et innovation.",
+        "button": "En savoir plus"
       }
     },
+    "services": {
+      "title": "Services Fournis",
+      "button": "en savoir plus",
+      "description": "Fourniture de services de haute qualité et d'excellence",
+      "service": {
+        "administration": {
+          "title": "Administratif",
+          "description": "Gestion et support administratif pour entreprises."
+        },
+        "cleaning_commercial": {
+          "title": "Nettoyage Commercial",
+          "description": "Services de nettoyage pour les environnements commerciaux, assurant hygiène et confort."
+        },
+        "construction": {
+          "title": "Construction",
+          "description": "Projets et exécutions de construction civile de qualité et en sécurité."
+        },
+        "hospitality": {
+          "title": "Hôtellerie",
+          "description": "Services d'excellence en hospitalité et hébergement."
+        },
+        "industry": {
+          "title": "Industrie",
+          "description": "Solutions industrielles innovantes pour optimiser la production."
+        },
+        "cleaning_residential": {
+          "title": "Nettoyage Résidentiel",
+          "description": "Nettoyage et organisation pour les résidences, procurant bien-être."
+        }
+      }
+    },
+
     "page": {
       "get-started": "Comece editando o arquivo",
       "by": "Por",
@@ -31,5 +88,39 @@
         "content": "Faça deploy instantaneamente de seu site Next.js em uma URL compartilhável com a Vercel."
       }
     }
+  },
+  "header": {
+    "home": {
+      "title": "Accueil",
+      "button": "obtenir un devis",
+      "children": {
+        "service": "Services"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "children": {
+        "administration": {
+          "title": "Administratif"
+        },
+        "cleaning_commercial": {
+          "title": "Nettoyage Commercial"
+        },
+        "construction": {
+          "title": "Construction"
+        },
+        "hospitality": {
+          "title": "Hôtellerie"
+        },
+        "industry": {
+          "title": "Industrie"
+        },
+        "cleaning_residential": {
+          "title": "Nettoyage Résidentiel"
+        }
+      }
+    },
+    "about": "À propos",
+    "contact": "Contact"
   }
 }

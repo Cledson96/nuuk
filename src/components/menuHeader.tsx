@@ -1,60 +1,24 @@
-"use client";
-import { useState, useEffect } from "react";
-import logo from "@/img/logo-azul-cortada.png";
-import Image from "next/image";
-import Link from "next/link";
-import { IoIosArrowForward } from "react-icons/io";
+'use client';
+import { useState, useEffect } from 'react';
+import logo from '@/img/logo-azul-cortada.png';
+import Image from 'next/image';
+import Link from 'next/link';
+import { IoIosArrowForward } from 'react-icons/io';
+import items from './itensHeader';
 
-const itens = [
-  {
-    title: "Home",
-    children: [
-      {
-        title: "Home Page 1",
-        link: "index.html",
-      },
-      {
-        title: "Home Page 2",
-        link: "index-two.html",
-      },
-      {
-        title: "Home Page 3",
-        link: "index-three.html",
-      },
-    ],
-    link: "/",
-  },
-  {
-    title: "About",
-    link: "about.html",
-  },
-  {
-    title: "Services",
-    children: [
-      {
-        title: "Service one",
-        link: "service.html",
-      },
-      {
-        title: "Services two",
-        link: "service-two.html",
-      },
-      {
-        title: "Service three",
-        link: "service-three.html",
-      },
-      {
-        title: "Service details",
-        link: "service-details.html",
-      },
-    ],
-    link: "service.html",
-  },
-];
-
+import { usePathname } from 'next/navigation';
+interface HeaderItem {
+  title: string;
+  children?: [{ title: string; link: string }];
+  link: string;
+  button?: string;
+}
 export default function MenuHeader() {
   const [isSticky, setIsSticky] = useState(false);
+  const [itens, setItens] = useState<HeaderItem[]>([]);
+  const pathName = usePathname();
 
+  const locale = pathName.split('/')[1] as 'en' | 'pt' | 'fr';
   const checkScroll = () => {
     const offset = window.scrollY;
 
@@ -65,14 +29,15 @@ export default function MenuHeader() {
     }
   };
   useEffect(() => {
-    window.addEventListener("scroll", checkScroll);
+    items({ locale }).then(res => setItens(res as HeaderItem[]));
+    window.addEventListener('scroll', checkScroll);
     return () => {
-      window.removeEventListener("scroll", checkScroll);
+      window.removeEventListener('scroll', checkScroll);
     };
-  }, []);
+  }, [pathName]);
 
   return (
-    <div className={`navbar-area ${isSticky ? "sticky " : ""}`}>
+    <div className={`navbar-area ${isSticky ? 'sticky ' : ''}`}>
       <div className="mobile-nav">
         <Image src={logo} alt="logo" />
       </div>
@@ -82,7 +47,7 @@ export default function MenuHeader() {
             <a className="navbar-brand" href="index.html">
               <Image
                 src={logo}
-                style={{ width: "auto", height: "100%" }}
+                style={{ width: 'auto', height: '100%' }}
                 alt="logo"
               />
             </a>
@@ -93,7 +58,7 @@ export default function MenuHeader() {
                     <li className="nav-item" key={index}>
                       {item.children ? (
                         <Link
-                          href={item.link ?? "#"}
+                          href={item.link ?? '#'}
                           className="nav-link dropdown-toggle"
                         >
                           {item.title}
@@ -110,7 +75,7 @@ export default function MenuHeader() {
                             return (
                               <li className="nav-item" key={index}>
                                 <Link
-                                  href={child.link ?? "#"}
+                                  href={child.link ?? '#'}
                                   className="nav-link"
                                 >
                                   {child.title}
@@ -123,139 +88,9 @@ export default function MenuHeader() {
                     </li>
                   );
                 })}
-                {/*  <li className="nav-item">
-                  <a href="#" className="nav-link dropdown-toggle active">
-                    Home
-                    <IoIosArrowForward />
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a href="index.html" className="nav-link active">
-                        Home Page 1
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="index-two.html" className="nav-link">
-                        Home Page 2
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="index-three.html" className="nav-link">
-                        Home Page 3
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a href="about.html" className="nav-link">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="service.html" className="nav-link dropdown-toggle">
-                    Services
-                    <i className="icofont-rounded-right"></i>
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a href="service.html" className="nav-link">
-                        Service one
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="service-two.html" className="nav-link">
-                        Services two
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="service-three.html" className="nav-link">
-                        Service three
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="service-details.html" className="nav-link">
-                        Service details
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a href="blog.html" className="nav-link dropdown-toggle">
-                    Blog
-                    <i className="icofont-rounded-right"></i>
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a href="blog.html" className="nav-link">
-                        Blog
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="blog-right-sidebar.html" className="nav-link">
-                        Blog Right sidebar
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="blog-details.html" className="nav-link">
-                        Blog details
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a href="#" className="nav-link dropdown-toggle">
-                    Pages
-                    <i className="icofont-rounded-right"></i>
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a href="pricing.html" className="nav-link">
-                        Pricing
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="testimonial.html" className="nav-link">
-                        Testimonial
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="recent-project.html" className="nav-link">
-                        Recent Project
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="404.html" className="nav-link">
-                        404 Page
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a href="#" className="nav-link dropdown-toggle">
-                    Team
-                    <i className="icofont-rounded-right"></i>
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a href="team.html" className="nav-link">
-                        Team
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="team-two.html" className="nav-link">
-                        Team two
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a href="contact.html" className="nav-link">
-                    Contact
-                  </a>
-                </li> */}
               </ul>
               <div className="navbar-button">
-                <a href="testimonial.html">Get Quote</a>
+                <Link href="/">{itens[0]?.button ?? ''}</Link>
               </div>
             </div>
           </nav>

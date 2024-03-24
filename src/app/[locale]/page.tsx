@@ -1,4 +1,4 @@
-import { Carousel } from '@/components';
+import { Carousel, Services } from '@/components';
 
 import { Locale } from '@/config/i18n-config';
 
@@ -10,6 +10,7 @@ export default async function IndexPage({
   return (
     <>
       <Carousel locale={locale} />
+      <Services locale={locale} />
     </>
   );
 }
