@@ -1,0 +1,35 @@
+{
+  "home": {
+    "meta": {
+      "title": "Create Next App",
+      "description": "Gerado pelo create next app"
+    },
+    "slider": {
+      "hospitality": {
+        "title": "Ensuring Your Comfort, Our Duty",
+        "description": "Nous donnons la priorité à votre confort et sécurité dans nos services hôteliers. Notre équipe assure des normes élevées d'hygiène et un soin personnalisé pour un séjour mémorable. Votre satisfaction est notre engagement.",
+        "button": "en savoir plus"
+      }
+    },
+    "page": {
+      "get-started": "Comece editando o arquivo",
+      "by": "Por",
+      "docs": {
+        "title": "Docs",
+        "content": "Encontre informações detalhadas sobre os recursos e a API do Next.js."
+      },
+      "learn": {
+        "title": "Aprenda",
+        "content": "Aprenda sobre o Next.js em um curso interativo com questionários!"
+      },
+      "templates": {
+        "title": "Templates",
+        "content": "Explore o playground do Next.js."
+      },
+      "deploy": {
+        "title": "Deploy",
+        "content": "Faça deploy instantaneamente de seu site Next.js em uma URL compartilhável com a Vercel."
+      }
+    }
+  }
+}
