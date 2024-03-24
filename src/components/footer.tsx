@@ -51,7 +51,7 @@ export default function Footer() {
 
   return (
     <>
-      <Contact />
+      <Contact locale={locale} />
       <footer className="footer-area">
         <div className="container">
           <div className="row">

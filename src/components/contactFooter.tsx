@@ -1,6 +1,29 @@
+'use client';
+
 import Image from 'next/image';
 import img from '@/img/contact.jpg';
-export default function Contact() {
+import ContactsItens from './intenscontact';
+import { useState, useEffect } from 'react';
+interface ContactItem {
+  title: string;
+  name: string;
+  description: string;
+  email: string;
+  message: string;
+  button: string;
+}
+export default function Contact({ locale }: { locale: 'en' | 'pt' | 'fr' }) {
+  const [itens, setItens] = useState<ContactItem>({
+    title: '',
+    description: '',
+    email: '',
+    message: '',
+    button: '',
+    name: '',
+  });
+  useEffect(() => {
+    ContactsItens({ locale }).then(res => setItens(res));
+  }, [locale]);
   return (
     <div className="contact-section">
       <div className="container">
@@ -19,10 +42,8 @@ export default function Contact() {
             <div className="col-lg-6 col-md-6">
               <div className="contact-text">
                 <div className="section-head">
-                  <h2>
-                    We Love to <span> Hear from You</span>
-                  </h2>
-                  <p>Feel free and share with us. We will get you</p>
+                  <h2>{itens.title}</h2>
+                  <p> {itens.description}</p>
                 </div>
                 <div className="contact-form">
                   <form id="contactForm">
@@ -36,7 +57,7 @@ export default function Contact() {
                             className="form-control"
                             required
                             data-error="Please enter your name"
-                            placeholder="Your Name"
+                            placeholder={itens.name}
                           />
                           <div className="help-block with-errors"></div>
                         </div>
@@ -51,7 +72,7 @@ export default function Contact() {
                             className="form-control"
                             required
                             data-error="Please enter your email"
-                            placeholder="Your Email"
+                            placeholder={itens.email}
                           />
                           <div className="help-block with-errors"></div>
                         </div>
@@ -65,7 +86,7 @@ export default function Contact() {
                             id="message"
                             required
                             data-error="Write your message"
-                            placeholder="Your Message"
+                            placeholder={itens.message}
                           ></textarea>
                           <div className="help-block with-errors"></div>
                         </div>
@@ -73,7 +94,7 @@ export default function Contact() {
 
                       <div className="col-lg-12 col-md-12">
                         <button type="submit" className="default-btn page-btn">
-                          Send Message
+                          {itens.button}
                         </button>
                         <div
                           id="msgSubmit"

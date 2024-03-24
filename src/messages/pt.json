@@ -127,5 +127,13 @@
   "about": {
     "footer": "A Nuuk Resources oferece serviços variados, como suporte administrativo, limpezas comercial e residencial, construção civil, hotelaria e serviços industriais. Nossa meta é superar as expectativas com qualidade e eficiência, comprometendo-nos com a sustentabilidade",
     "find": "Encontre-nos em"
+  },
+  "contact": {
+    "title": "Fale conosco",
+    "description":"Estamos sempre prontos para atendê-lo. Entre em contato conosco",
+    "email": "Seu email",
+    "name":"Seu nome",
+    "message": "Escreva sua mensagem.",
+    "button":"Enviar mensagem"
   }
 }
