@@ -21,7 +21,7 @@ export default async function HeaderlItens({
     },
     {
       title: dictionary.header.about,
-      link: '/',
+      link: '/about',
     },
     {
       title: dictionary.header.services.title,
