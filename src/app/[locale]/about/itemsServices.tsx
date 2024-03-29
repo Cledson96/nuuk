@@ -5,6 +5,12 @@ import { MdOutlineSwapHoriz } from 'react-icons/md';
 import { GiDiamondHard } from 'react-icons/gi';
 import { IoMdTime } from 'react-icons/io';
 import { getDictionary } from '@/config/get-dictionary';
+import { FaTools } from 'react-icons/fa';
+import { MdAttachMoney } from 'react-icons/md';
+import { SlBookOpen } from 'react-icons/sl';
+import { MdSwapHoriz } from 'react-icons/md';
+import { LiaBinocularsSolid } from 'react-icons/lia';
+import { PiTreeThin } from 'react-icons/pi';
 
 export default async function About({
   locale,
@@ -14,7 +20,7 @@ export default async function About({
   const dictionary = await getDictionary(locale);
 
   const about = {
-    about: dictionary.about.about,
+    about: dictionary.about.about.about,
     home: dictionary.header.home.title,
   };
 
@@ -51,5 +57,37 @@ export default async function About({
     },
   ];
 
-  return { itemsServices, title, about };
+  const aboutInit = {
+    title: dictionary.about.about.title,
+    description: dictionary.about.about.description,
+    benefits: dictionary.about.about.benefits.benefits,
+  };
+  const benefits = [
+    {
+      title: dictionary.about.about.benefits.equipament,
+      icon: <FaTools size={30} className="mb-3 " />,
+    },
+
+    {
+      title: dictionary.about.about.benefits.reduction,
+      icon: <MdAttachMoney size={30} className="mb-3" />,
+    },
+    {
+      title: dictionary.about.about.benefits.responsability,
+      icon: <PiTreeThin size={30} className="mb-3" />,
+    },
+    {
+      title: dictionary.about.about.benefits.substitution,
+      icon: <MdSwapHoriz size={30} className="mb-3" />,
+    },
+    {
+      title: dictionary.about.about.benefits.supervision,
+      icon: <LiaBinocularsSolid size={30} className="mb-3" />,
+    },
+    {
+      title: dictionary.about.about.benefits.treinament,
+      icon: <SlBookOpen size={30} className="mb-3" />,
+    },
+  ];
+  return { itemsServices, title, about, aboutInit, benefits };
 }

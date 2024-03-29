@@ -138,7 +138,20 @@
       "title": "Découvrez NUUK Resources",
       "subTitle": "Votre Partenaire Stratégique en Solutions d'Externalisation."
     },
-    "about": "À propos de nous"
+    "about": {
+      "about": "À propos de nous",
+      "title": "À propos de NUUK Resources",
+      "description": "Nous sommes des prestataires de services externalisés et fournissons des solutions de main-d'œuvre aux entreprises. Nuuk Services a l'expérience pour évaluer les besoins, les objectifs de chaque entreprise et nous personnalisons une proposition avec le meilleur rapport coût-bénéfice pour chaque cas.",
+      "benefits": {
+        "benefits": "Avantages",
+        "reduction": "Réduction de divers coûts de personnel et fiscaux",
+        "treinament": "Formation et développement périodiques",
+        "substitution": "Remplacements immédiats",
+        "supervision": "Supervision",
+        "responsability": "Responsabilité envers les questions environnementales",
+        "equipament": "Équipements, uniformes, produits et machines"
+      }
+    }
   },
   "contact": {
     "title": "Contactez-nous",

@@ -138,7 +138,20 @@
       "title": "Discover NUUK Resources",
       "subTitle": "Your Strategic Partner in Outsourcing Solutions."
     },
-    "about": "About Us"
+    "about": {
+      "about": "About us",
+      "title": "About NUUK Resources",
+      "description": "We are outsourced service providers and supply labor solutions to companies. Nuuk Services has the experience to assess needs, goals of each company and we customize a proposal with the best cost-benefit for each case.",
+      "benefits": {
+        "benefits": "Benefits",
+        "reduction": "Various cost reductions in payroll and taxes",
+        "treinament": "Periodic training and development",
+        "substitution": "Immediate replacements",
+        "supervision": "Supervision",
+        "responsability": "Responsibility with environmental issues",
+        "equipament": "Equipment, uniforms, products, and machines"
+      }
+    }
   },
   "contact": {
     "title": "Contact Us",

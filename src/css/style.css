@@ -4526,7 +4526,7 @@ button:focus,
 .about-style-three .about-img::before {
   position: absolute;
   content: '';
-
+  background-image: url(../img/contact-shape.png);
   background-position: center center;
   background-size: cover;
   width: 150px;

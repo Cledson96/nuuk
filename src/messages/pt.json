@@ -139,7 +139,20 @@
       "title": "Descubra a NUUK Resourcers",
       "subTitle": "Sua Parceria Estratégica em Soluções de Terceirização."
     },
-    "about": "Sobre nós"
+    "about": {
+      "about": "Sobre nós",
+      "title": "Sobre a NUUK Resources",
+      "description": "Somos provedores de serviços terceirizados e fornecemos soluções de mão de obra para empresas. A Nuuk Services tem experiência para avaliar necessidades, objetivos de cada empresa e personalizamos uma proposta com o melhor custo benefício para cada caso.",
+      "benefits": {
+        "benefits": "Vantagens",
+        "reduction": "Redução de custos diversos de folha e tributários",
+        "treinament": "Treinamento e desenvolvimento periódicos",
+        "substitution": "Substituições imediatas",
+        "supervision": "Supervisão",
+        "responsability": "Responsabilidade com as questões ambientais",
+        "equipament": "Equipamentos, uniformes, produtos e máquinas"
+      }
+    }
   },
   "contact": {
     "title": "Fale conosco",

@@ -14,6 +14,12 @@ interface Items {
 }
 
 interface Texts {
+  aboutInit: {
+    title: string;
+    description: string;
+    benefits: string;
+  };
+  benefits: { title: string; icon: JSX.Element }[];
   about: {
     about: string;
     home: string;
@@ -30,6 +36,12 @@ export default function Page({
   params: { locale: Locale };
 }) {
   const [texts, setTexts] = useState<Texts>({
+    aboutInit: {
+      title: '',
+      description: '',
+      benefits: '',
+    },
+    benefits: [],
     about: {
       about: '',
       home: '',
@@ -66,6 +78,33 @@ export default function Page({
           </div>
         </div>
       </div>
+      <section className="service-section pt-100 " id="services">
+        <div className="container">
+          <div className="section-head text-center">
+            <h2>
+              <span>{texts.aboutInit.title}</span>{' '}
+            </h2>
+            {<p>{texts.aboutInit.description}</p>}
+          </div>
+
+          <div className="row mt-4">
+            <div className=" text-center mb-4">
+              <h2 className="fs-1 color-default-title">
+                {texts.aboutInit.benefits}
+              </h2>
+            </div>
+
+            {texts.benefits.map((service, index) => (
+              <div key={index} className="col-lg-4 col-md-6 col-sm-6">
+                <div className="service-card">
+                  {service.icon}
+                  <h3 className="fs-6">{service.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="about-style-two about-style-three pt-100 pb-70 mx-4">
         <div className="container-fluid">
           <div className="row align-items-center">

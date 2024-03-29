@@ -16,6 +16,10 @@ a {
     color: #031888 !important;
 }
 
+.section-head h2 span {
+    color: #031888 !important;
+}
+
 .about-ul li {
     color: #2c65af !important;
     font-size: 1rem !important;
@@ -24,6 +28,10 @@ a {
 .height-auto {
     height: auto !important;
 
+}
+
+.color-default-title {
+    color: #031888 !important;
 }
 
 .about-ul li:hover {
