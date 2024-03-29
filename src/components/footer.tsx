@@ -91,12 +91,9 @@ export default function Footer() {
                 <ul className="find-us">
                   <li>
                     <FaLocationDot className="me-1" />
-                    28/A Street, New York City
+                    14 C Rua Castilho, 5th Floor, Lisbon
                   </li>
-                  <li>
-                    <FaPhoneAlt className="me-1" />
-                    <a href="tel:+880123456789"> +88 0123 456 789 </a>
-                  </li>
+
                   <li>
                     <IoMail className="me-1" />
                     <a href="mailto:info@viscous.com"> info@viscous.com </a>
@@ -109,7 +106,7 @@ export default function Footer() {
         <div className="bottom-footer">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6">
+              <div className="col-lg-3">
                 <div className="footer-social">
                   <ul className="menu-header">
                     {socialItens.map((itemSocial, index) => {
@@ -122,7 +119,13 @@ export default function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-5">
+                <div className="copyright-text text-center">
+                  <p>Vanguarda Binária Unipessoal LDA. - NIPC: 518075214</p>
+                </div>
+              </div>
+
+              <div className="col-lg-4">
                 <div className="copyright-text text-end">
                   <p>
                     &copy;2024 Nuuk -

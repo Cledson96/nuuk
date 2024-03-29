@@ -160,5 +160,94 @@
     "name": "Votre nom",
     "message": "Écrivez votre message.",
     "button": "Envoyer le message"
+  },
+  "services": {
+    "title": "Services",
+    "service": {
+      "administration": {
+        "title": "Administratif",
+        "title_text": "Service Administratif / Réception",
+        "text1": "Dans l'environnement d'entreprise, l'efficacité et l'organisation administrative sont fondamentales. Une équipe bien préparée assure le bon déroulement de tous les processus internes sans interruption, garantissant un environnement de travail productif. De la gestion des agendas au service téléphonique, chaque détail est crucial pour maintenir l'harmonie et l'efficacité sur le lieu de travail. Dans un monde de plus en plus rapide, il est vital d'avoir un service administratif qui ne se contente pas de répondre, mais anticipe les besoins de l'entreprise.",
+        "ul": [
+          "Réception",
+          "Service téléphonique",
+          "Contrôle de correspondance",
+          "Contrôle d'accès",
+          "Contrôle des documents",
+          "Gestion de l'agenda"
+        ],
+        "text2": "La base de toute entreprise réussie réside dans sa capacité à tout garder organisé et fonctionnant sans problème. Les services administratifs jouent un rôle crucial, agissant comme le cœur de l'entreprise, où toutes les fonctions vitales sont surveillées et gérées. Une équipe dédiée et attentive peut transformer la dynamique de travail, élevant le niveau de professionnalisme et d'efficacité. Investir dans des services administratifs de qualité est investir dans l'avenir de l'entreprise."
+      },
+      "cleaning_commercial": {
+        "title": "Nettoyage Commercial",
+        "title_text": "Nettoyage Commercial",
+        "text1": "Maintenir un environnement commercial propre et attrayant est essentiel pour l'image de toute entreprise. Un espace propre offre non seulement un environnement de travail plus sain, mais transmet également aux clients et visiteurs un fort sens du professionnalisme et de l'attention aux détails. Des services de nettoyage commercial complets assurent que, du hall d'entrée aux bureaux et salles de réunion, chaque centimètre de l'établissement reflète l'excellence et l'engagement envers la qualité.",
+        "ul": [
+          "Désinfection des environnements",
+          "Nettoyage des espaces communs",
+          "Entretien des bureaux",
+          "Assainissement des salles de bain",
+          "Maintenance des sols",
+          "Lavage des vitres"
+        ],
+        "text2": "La première impression est cruciale dans le monde des affaires, et un environnement impeccablement propre est un élément clé pour garantir cette impression positive. En plus de contribuer à une apparence esthétique agréable, le nettoyage commercial joue également un rôle important dans la santé et le bien-être des employés et des visiteurs. Employer un service de nettoyage commercial dédié signifie mettre le bien-être et l'image de votre entreprise entre les mains de professionnels."
+      },
+      "construction": {
+        "title": "Construction Civile",
+        "title_text": "Construction Civile",
+        "text1": "La construction civile est l'épine dorsale du développement urbain, transformant les visions architecturales en réalités tangibles. Chaque projet est une promesse de renouveau et d'innovation, où chaque détail compte dans la création d'espaces qui abriteront la vie quotidienne des gens. Il est essentiel de disposer d'une équipe de construction civile alliant compétence technique et engagement indéfectible envers la qualité, assurant que chaque bâtiment soit non seulement une structure, mais un foyer pour les générations futures.",
+        "ul": [
+          "Gestion de projet",
+          "Ingénierie civile",
+          "Architecture et design",
+          "Sécurité au travail",
+          "Durabilité dans la construction",
+          "Supervision de la qualité"
+        ],
+        "text2": "Les projets de construction civile reflètent les rêves et les aspirations d'une communauté, étant fondamentaux pour la croissance et la prospérité de toute ville. Grâce au dévouement et au travail acharné, les professionnels de la construction civile façonnent le monde autour de nous, créant les espaces où la vie se déroulera. Chaque brique posée est un pas vers l'avenir, rendant essentiel le choix d'une équipe qui valorise l'intégrité et l'excellence à chaque phase du projet."
+      },
+      "hospitality": {
+        "title": "Hôtellerie",
+        "title_text": "Hôtellerie",
+        "text1": "L'industrie de l'hôtellerie repose sur l'art de faire sentir les invités chez eux, même lorsqu'ils sont loin de chez eux. Chaque détail, de l'accueil chaleureux aux chambres méticuleusement préparées, est conçu pour fournir une expérience inoubliable. Le service hôtelier doit transcender les attentes, offrant un environnement qui combine confort, luxe et une attention maximale aux besoins des invités. C'est le dévouement à l'excellence qui définit les standards de la véritable hospitalité.",
+        "ul": [
+          "Accueil des invités",
+          "Gestion des réservations",
+          "Services de conciergerie",
+          "Maintenance des chambres",
+          "Organisation d'événements",
+          "Cuisine et gastronomie"
+        ],
+        "text2": "Dans un monde où les voyages sont devenus une partie essentielle de la vie des gens, l'hôtellerie joue un rôle crucial dans la rend chaque voyage mémorable. Offrir un havre de paix après une journée d'aventures ou de réunions d'affaires est au cœur de l'hospitalité. Grâce à un service impeccable et à une attention aux détails, les hôtels ne sont pas seulement des lieux où passer la nuit ; ils deviennent partie intégrante de l'expérience de voyage, enrichissant les histoires de vie des voyageurs avec des moments de confort et de luxe."
+      },
+      "industry": {
+        "title": "Industrie",
+        "title_text": "Maintenance Industrielle",
+        "text1": "Le secteur industriel est le moteur du progrès, poussant l'innovation et le développement à l'échelle mondiale. La maintenance industrielle assure que ce moteur continue de fonctionner efficacement, maximisant la productivité et minimisant les arrêts non planifiés. De la supervision des machines à la gestion des systèmes complexes, chaque aspect de la maintenance est vital pour maintenir l'intégrité et l'efficacité des opérations industrielles. C'est l'engagement envers l'excellence opérationnelle qui sous-tend le succès à long terme.",
+        "ul": [
+          "Maintenance des machines",
+          "Contrôle de qualité",
+          "Sécurité industrielle",
+          "Optimisation des processus",
+          "Automatisation industrielle",
+          "Gestion des fournitures"
+        ],
+        "text2": "Dans l'industrie, chaque seconde compte et l'efficacité est mesurée non seulement en termes de production, mais aussi dans la capacité à anticiper et à prévenir les problèmes avant qu'ils ne surviennent. La maintenance industrielle joue un rôle crucial dans ce contexte, agissant comme la ligne de défense qui assure la continuité des opérations. Investir dans des services de maintenance de haute qualité est investir dans la fondation même du succès industriel, assurant que la machine d'innovation continue d'avancer sans interruptions."
+      },
+      "cleaning_residential": {
+        "title": "Nettoyage Résidentiel",
+        "title_text": "Nettoyage Résidentiel",
+        "text1": "La maison est plus qu'un espace physique ; c'est un havre de confort et de sécurité. Le nettoyage résidentiel est fondamental pour maintenir ce sanctuaire non seulement agréable visuellement, mais aussi sain pour tous ceux qui y vivent. Les services de nettoyage résidentiel détaillés vont des tâches quotidiennes aux nettoyages en profondeur occasionnels, assurant que chaque coin de la maison est libre de poussière et de désordre. C'est l'attention aux détails qui transforme une maison en un foyer.",
+        "ul": [
+          "Assainissement de l'environnement",
+          "Nettoyage des fenêtres",
+          "Aspiration des tapis",
+          "Nettoyage des meubles",
+          "Désinfection des zones d'usage commun",
+          "Organisation des espaces"
+        ],
+        "text2": "Dans un monde trépidant, le temps passé à la maison est un trésor précieux. Le nettoyage résidentiel soulage les résidents des tâches ménagères, leur permettant de consacrer plus de temps à ce qui compte vraiment : la famille et les moments ensemble. Les professionnels du nettoyage apportent non seulement compétence et efficacité au travail, mais aussi un sens du soin et du respect de l'espace personnel. Ils jouent un rôle silencieux, mais vital, dans le maintien de la maison comme un espace de paix et de joie."
+      }
+    }
   }
 }

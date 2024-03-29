@@ -663,15 +663,6 @@ button:focus,
   position: relative;
 }
 
-.header-section .header-widget ul li::before {
-  position: absolute;
-  content: '';
-  background: #ffffff;
-  width: 1px;
-  height: 20px;
-  right: 0;
-  top: 3px;
-}
 
 .header-section .header-widget ul li i {
   margin-right: 5px;
@@ -5754,7 +5745,7 @@ button:focus,
   font-size: 16px;
   font-weight: 500;
   color: #282828;
-  width: 242px;
+  width: 280px;
 }
 
 .service-details-area .service-details-post ul li i {
@@ -6165,3 +6156,9 @@ button:focus,
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 767px) {
+  .header-section {
+    display: none !important;
+  }
+}

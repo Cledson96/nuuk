@@ -1,9 +1,8 @@
 'use client';
 
-import { FaAngleDoubleRight } from 'react-icons/fa';
-import Link from 'next/link';
 import img from '@/img/about/about2.jpg';
 import Image from 'next/image';
+import { AboutPage } from '@/components';
 import { Locale } from '@/config/i18n-config';
 import { useState, useEffect } from 'react';
 import text from './itemsServices';
@@ -58,26 +57,11 @@ export default function Page({
 
   return (
     <>
-      <div className="about-title about-title-bg about-image paralax">
-        <div className="d-table">
-          <div className="d-table-cell">
-            <div className="container">
-              <div className="about-title-text">
-                <h2>{texts.about.about}</h2>
-                <ul>
-                  <li>
-                    <Link href="/">{texts.about.home}</Link>
-                  </li>
-                  <li>
-                    <FaAngleDoubleRight color="blue" className="mx-2" />
-                    {texts.about.about}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <AboutPage
+        image="about/about.jpg"
+        title={texts.about.about}
+        home={texts.about.home}
+      />
       <section className="service-section pt-100 " id="services">
         <div className="container">
           <div className="section-head text-center">

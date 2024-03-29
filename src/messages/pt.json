@@ -161,5 +161,94 @@
     "name": "Seu nome",
     "message": "Escreva sua mensagem.",
     "button": "Enviar mensagem"
+  },
+  "services": {
+    "title": "Serviços",
+    "service": {
+      "administration": {
+        "title": "Administrativo",
+        "title_text": "Serviço Administrativo / Recepção",
+        "text1": "No ambiente corporativo, a eficiência e a organização administrativa são fundamentais. Uma equipe bem preparada assegura que todos os processos internos fluam sem interrupções, garantindo um ambiente de trabalho produtivo. Desde o gerenciamento de agendas até o atendimento telefônico, cada detalhe é crucial para manter a harmonia e a eficiência no local de trabalho. Em um mundo cada vez mais rápido, é vital contar com um serviço administrativo que não apenas atenda, mas antecipe as necessidades da empresa.",
+        "ul": [
+          "Recepção",
+          "Atendimento telefônico",
+          "Controle de correspondências",
+          "Controle de acesso",
+          "Controle de documentos",
+          "Controle de agenda"
+        ],
+        "text2": "A base de qualquer negócio de sucesso reside em sua capacidade de manter tudo organizado e funcionando sem problemas. Os serviços administrativos desempenham um papel crucial, atuando como o coração da empresa, onde todas as funções vitais são monitoradas e gerenciadas. Uma equipe dedicada e atenta pode transformar a dinâmica de trabalho, elevando o nível de profissionalismo e eficácia. Investir em serviços administrativos de qualidade é investir no futuro da empresa."
+      },
+      "cleaning_commercial": {
+        "title": "Limpeza comercial",
+        "title_text": "⁠Limpeza Comercial",
+        "text1": "Manter um ambiente comercial limpo e atraente é essencial para a imagem de qualquer negócio. Um espaço limpo não apenas proporciona um ambiente de trabalho mais saudável, mas também transmite aos clientes e visitantes um forte senso de profissionalismo e atenção aos detalhes. Serviços de limpeza comercial abrangentes garantem que desde o lobby até os escritórios e salas de reunião, cada centímetro do estabelecimento reflita a excelência e o compromisso com a qualidade.",
+        "ul": [
+          "Desinfecção de ambientes",
+          "Limpeza de áreas comuns",
+          "Asseio de escritórios",
+          "Higienização de banheiros",
+          "Manutenção de pisos",
+          "Lavagem de vidraças"
+        ],
+        "text2": "A primeira impressão é crucial no mundo dos negócios, e um ambiente impecavelmente limpo é um componente chave para garantir essa impressão positiva. Além de contribuir para uma aparência estética agradável, a limpeza comercial também desempenha um papel importante na saúde e bem-estar dos funcionários e visitantes. Empregar um serviço de limpeza comercial dedicado significa colocar o bem-estar e a imagem da sua empresa nas mãos de profissionais."
+      },
+      "construction": {
+        "title": "Construção civil",
+        "title_text": "Construção civil",
+        "text1": "A construção civil é a espinha dorsal do desenvolvimento urbano, transformando visões arquitetônicas em realidades tangíveis. Cada projeto é uma promessa de renovação e inovação, onde cada detalhe conta na criação de espaços que irão abrigar a vida cotidiana das pessoas. É essencial contar com uma equipe de construção civil que combine habilidade técnica com um compromisso inabalável com a qualidade, garantindo que cada edifício seja não apenas uma estrutura, mas um lar para as futuras gerações.",
+        "ul": [
+          "Gestão de obras",
+          "Engenharia civil",
+          "Arquitetura e design",
+          "Segurança do trabalho",
+          "Sustentabilidade em construção",
+          "Fiscalização de qualidade"
+        ],
+        "text2": "Os projetos de construção civil refletem os sonhos e aspirações de uma comunidade, sendo fundamentais para o crescimento e a prosperidade de qualquer cidade. Através da dedicação e do trabalho árduo, os profissionais da construção civil dão forma ao mundo ao nosso redor, criando os espaços onde a vida irá desdobrar-se. Cada tijolo colocado é um passo em direção ao futuro, tornando essencial a escolha de uma equipe que valorize a integridade e a excelência em cada fase do projeto."
+      },
+      "hospitality": {
+        "title": "Hotelaria",
+        "title_text": "Hotelaria",
+        "text1": "A indústria da hotelaria é fundamentada na arte de fazer os hóspedes se sentirem em casa, mesmo estando longe dela. Cada detalhe, da recepção calorosa aos quartos meticulosamente preparados, é pensado para proporcionar uma experiência inesquecível. O serviço de hotelaria deve transcender as expectativas, oferecendo um ambiente que combina conforto, luxo e a máxima atenção às necessidades dos hóspedes. É a dedicação à excelência que define os padrões da verdadeira hospitalidade.",
+        "ul": [
+          "Acolhimento de hóspedes",
+          "Gestão de reservas",
+          "Serviços de concierge",
+          "Manutenção de quartos",
+          "Organização de eventos",
+          "Culinária e gastronomia"
+        ],
+        "text2": "Em um mundo onde as viagens se tornaram uma parte essencial da vida das pessoas, a hotelaria assume um papel crucial em tornar cada jornada memorável. Oferecer um refúgio tranquilo após um dia de aventuras ou reuniões de negócios é o coração da hospitalidade. Através de um serviço impecável e atenção aos detalhes, os hotéis não são apenas lugares para pernoitar; eles se tornam parte da experiência de viagem, enriquecendo as histórias de vida dos viajantes com momentos de conforto e luxo."
+      },
+      "industry": {
+        "title": "Indústria",
+        "title_text": "Manutenção Industrial",
+        "text1": "O setor industrial é o motor do progresso, impulsionando a inovação e o desenvolvimento em uma escala global. A manutenção industrial assegura que este motor continue a funcionar de forma eficiente, maximizando a produtividade e minimizando as paradas não planejadas. Desde a supervisão de máquinas até a gestão de sistemas complexos, cada aspecto da manutenção é vital para manter a integridade e a eficácia das operações industriais. É o compromisso com a excelência operacional que sustenta o sucesso a longo prazo.",
+        "ul": [
+          "Manutenção de maquinário",
+          "Controle de qualidade",
+          "Segurança industrial",
+          "Otimização de processos",
+          "Automação industrial",
+          "Gestão de suprimentos"
+        ],
+        "text2": "Na indústria, cada segundo conta e a eficiência é medida não apenas em termos de produção, mas também na capacidade de antecipar e prevenir problemas antes que eles ocorram. A manutenção industrial desempenha um papel crucial nesse contexto, atuando como a linha de defesa que garante a continuidade das operações. Investir em serviços de manutenção de alta qualidade é investir na própria fundação do sucesso industrial, garantindo que a máquina da inovação continue avançando sem interrupções."
+      },
+      "cleaning_residential": {
+        "title": "Limpeza Residencial",
+        "title_text": "Limpeza Residencial",
+        "text1": "O lar é mais do que um espaço físico; é um refúgio de conforto e segurança. A limpeza residencial é fundamental para manter este santuário não apenas visualmente agradável, mas também saudável para todos que nele residem. Serviços de limpeza residencial detalhados abrangem desde tarefas diárias até limpezas profundas ocasionais, assegurando que cada canto da casa esteja livre de poeira e desordem. É a atenção aos detalhes que transforma uma casa em um lar.",
+        "ul": [
+          "Higienização de ambientes",
+          "Limpeza de janelas",
+          "Aspiração de tapetes",
+          "Limpeza de móveis",
+          "Desinfecção de áreas de uso comum",
+          "Organização de espaços"
+        ],
+        "text2": "Em um mundo agitado, o tempo em casa é um tesouro valioso. A limpeza residencial alivia os moradores das tarefas domésticas, permitindo que eles dediquem mais tempo ao que realmente importa: a família e os momentos juntos. Profissionais de limpeza trazem não apenas habilidade e eficiência para o trabalho, mas também um senso de cuidado e respeito pelo espaço pessoal. Eles desempenham um papel silencioso, porém vital, em manter o lar como um espaço de paz e alegria."
+      }
+    }
   }
 }

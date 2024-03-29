@@ -28,27 +28,27 @@ export default async function HeaderlItens({
       children: [
         {
           title: dictionary.header.services.children.administration.title,
-          link: '/',
+          link: '/services/administrative',
         },
         {
           title: dictionary.header.services.children.cleaning_commercial.title,
-          link: '/',
+          link: '/services/commercial-cleaning',
         },
         {
           title: dictionary.header.services.children.cleaning_residential.title,
-          link: '/',
+          link: '/services/residential-cleaning',
         },
         {
           title: dictionary.header.services.children.construction.title,
-          link: '/',
+          link: '/services/construction',
         },
         {
           title: dictionary.header.services.children.hospitality.title,
-          link: '/',
+          link: '/services/hospitality',
         },
         {
           title: dictionary.header.services.children.industry.title,
-          link: '/',
+          link: '/services/industry',
         },
       ],
       link: '#',

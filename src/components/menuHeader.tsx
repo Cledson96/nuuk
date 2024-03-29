@@ -44,13 +44,13 @@ export default function MenuHeader() {
       <div className="main-nav">
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" href="/">
               <Image
                 src={logo}
                 style={{ width: 'auto', height: '100%' }}
                 alt="logo"
               />
-            </a>
+            </Link>
             <div className="collapse navbar-collapse mean-menu justify-content-center">
               <ul className="navbar-nav">
                 {itens.map((item, index) => {

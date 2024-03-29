@@ -39,16 +39,25 @@ a {
     filter: brightness(1.4);
 }
 
+.color-blue {
+    color: #6096fd !important;
+}
+
+.pt-20 {
+    padding-top: 20px;
+
+}
+
 .paralax {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    height: 400px;
+    height: 300px;
     width: 100%;
     position: relative;
     overflow: hidden;
     background-position: 50% 50%;
-    background-image: url('../img/about/about.jpg');
+
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;

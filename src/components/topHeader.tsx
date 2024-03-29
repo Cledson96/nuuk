@@ -1,6 +1,5 @@
-import { FiClock } from 'react-icons/fi';
 import { FaLocationDot } from 'react-icons/fa6';
-import { FaPhoneAlt } from 'react-icons/fa';
+
 import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaInstagram } from 'react-icons/fa';
@@ -8,16 +7,8 @@ import LocaleSwitcher from '@/components/locale-switcher';
 import Link from 'next/link';
 const itens = [
   {
-    title: 'Sun - Thu : 10:00AM - 06:00PM',
-    icon: <FiClock className="me-1" />,
-  },
-  {
-    title: '28/A Street, New York City',
+    title: '14 C Rua Castilho, 5th Floor, Lisbon 1250-069',
     icon: <FaLocationDot className="me-1" />,
-  },
-  {
-    title: '+88 0123 456 789',
-    icon: <FaPhoneAlt className="me-1" />,
   },
 ];
 

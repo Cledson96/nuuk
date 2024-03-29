@@ -4,3 +4,5 @@ export { default as Loading } from './loading';
 export { default as Carousel } from './carousel';
 export { default as Services } from './services';
 export { default as Footer } from './footer';
+export { default as AboutPage } from './aboutPages';
+export { default as TextServices } from './textServices';
