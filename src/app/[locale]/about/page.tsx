@@ -1,7 +1,49 @@
+'use client';
+
 import { FaAngleDoubleRight } from 'react-icons/fa';
 import Link from 'next/link';
+import img from '@/img/about/about2.jpg';
+import Image from 'next/image';
+import { Locale } from '@/config/i18n-config';
+import { useState, useEffect } from 'react';
+import text from './itemsServices';
 
-export default async function IndexPage() {
+interface Items {
+  title: string;
+  icon: JSX.Element;
+}
+
+interface Texts {
+  about: {
+    about: string;
+    home: string;
+  };
+  itemsServices: Items[];
+  title: {
+    title: string;
+    subtitle: string;
+  };
+}
+export default function Page({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
+  const [texts, setTexts] = useState<Texts>({
+    about: {
+      about: '',
+      home: '',
+    },
+    itemsServices: [],
+    title: {
+      title: '',
+      subtitle: '',
+    },
+  });
+  useEffect(() => {
+    text({ locale }).then(res => setTexts(res));
+  }, [locale]);
+
   return (
     <>
       <div className="about-title about-title-bg about-image paralax">
@@ -9,14 +51,14 @@ export default async function IndexPage() {
           <div className="d-table-cell">
             <div className="container">
               <div className="about-title-text">
-                <h2>About Us</h2>
+                <h2>{texts.about.about}</h2>
                 <ul>
                   <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/">{texts.about.home}</Link>
                   </li>
                   <li>
                     <FaAngleDoubleRight color="blue" className="mx-2" />
-                    About Us
+                    {texts.about.about}
                   </li>
                 </ul>
               </div>
@@ -24,57 +66,30 @@ export default async function IndexPage() {
           </div>
         </div>
       </div>
-      <section className="about-style-two about-style-three pt-100 pb-70">
+      <section className="about-style-two about-style-three pt-100 pb-70 mx-4">
         <div className="container-fluid">
           <div className="row align-items-center">
-            <div className="col-lg-6 p-0">
+            <div className="col-lg-5 p-0">
               <div className="about-img">
-                <img src="assets/img/about-two.png" alt="about image" />
+                <Image src={img} alt="about image" className="height-auto" />
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-7">
               <div className="about-text">
                 <div className="section-head">
-                  <h2>We have been doing projects since 2008.</h2>
-                  <p>
-                    It is a long fact that a reader will be distracted by the
-                    readable content.
-                  </p>
+                  <h2>{texts.title.title}</h2>
+                  <p>{texts.title.subtitle}</p>
                 </div>
 
-                <ul>
-                  <li>
-                    <i className="icofont-check-circled"></i>
-                    100% Secured
-                  </li>
-                  <li>
-                    <i className="icofont-check-circled"></i>
-                    Fast & Clean Service
-                  </li>
-                  <li>
-                    <i className="icofont-check-circled"></i>
-                    Well Disciplined
-                  </li>
-                  <li>
-                    <i className="icofont-check-circled"></i>
-                    24/7 Services
-                  </li>
-                  <li>
-                    <i className="icofont-check-circled"></i>
-                    Budget Oriented
-                  </li>
-                  <li>
-                    <i className="icofont-check-circled"></i>
-                    Online Payment
-                  </li>
+                <ul className="about-ul">
+                  {texts.itemsServices.map((item, index) => (
+                    <li key={index}>
+                      {item.icon}
+                      {item.title}
+                    </li>
+                  ))}
                 </ul>
-
-                <div className="theme-button">
-                  <a href="#" className="default-btn">
-                    Learn More
-                  </a>
-                </div>
               </div>
             </div>
           </div>

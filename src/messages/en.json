@@ -125,7 +125,20 @@
   },
   "about": {
     "footer": "Nuuk Resources provides diverse services, including administrative support, commercial and residential cleaning, civil construction, hospitality, and industrial services. Our goal is to exceed expectations with quality and efficiency, committed to sustainability.",
-    "find": "Find Us"
+    "find": "Find Us",
+    "items": {
+      "cost": "Cost Reduction",
+      "flexibility": "Flexibility",
+      "quality": "Qualified Workforce",
+      "supervision": "Dedicated Supervision",
+      "suport": "24/7 Support",
+      "Development": "Continuous Development"
+    },
+    "title": {
+      "title": "Discover NUUK Resources",
+      "subTitle": "Your Strategic Partner in Outsourcing Solutions."
+    },
+    "about": "About Us"
   },
   "contact": {
     "title": "Contact Us",

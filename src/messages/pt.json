@@ -126,14 +126,27 @@
   },
   "about": {
     "footer": "A Nuuk Resources oferece serviços variados, como suporte administrativo, limpezas comercial e residencial, construção civil, hotelaria e serviços industriais. Nossa meta é superar as expectativas com qualidade e eficiência, comprometendo-nos com a sustentabilidade",
-    "find": "Encontre-nos em"
+    "find": "Encontre-nos em",
+    "items": {
+      "cost": "Redução de custos",
+      "flexibility": "Flexibilidade",
+      "quality": "Mão de obra qualificada",
+      "supervision": "Supervisão Dedicada",
+      "suport": "Suporte 24/7",
+      "Development": "Desenvolvimento Contínuo"
+    },
+    "title": {
+      "title": "Descubra a NUUK Resourcers",
+      "subTitle": "Sua Parceria Estratégica em Soluções de Terceirização."
+    },
+    "about": "Sobre nós"
   },
   "contact": {
     "title": "Fale conosco",
-    "description":"Estamos sempre prontos para atendê-lo. Entre em contato conosco",
+    "description": "Estamos sempre prontos para atendê-lo. Entre em contato conosco",
     "email": "Seu email",
-    "name":"Seu nome",
+    "name": "Seu nome",
     "message": "Escreva sua mensagem.",
-    "button":"Enviar mensagem"
+    "button": "Enviar mensagem"
   }
 }
