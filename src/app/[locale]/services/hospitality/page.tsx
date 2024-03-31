@@ -1,11 +1,10 @@
 'use client';
-import { AboutPage } from '@/components';
+import { AboutPage, ContactFooter } from '@/components';
 import { Locale } from '@/config/i18n-config';
 import { useState, useEffect } from 'react';
 import { TextServices } from '@/components';
 import { FaRegCheckCircle } from 'react-icons/fa';
-import Image from 'next/image';
-import img from '@/img/services/hot.webp';
+import Link from 'next/link';
 interface Text {
   service: string;
   home: string;
@@ -14,6 +13,7 @@ interface Text {
   text1: string;
   text2: string;
   ul: string[];
+  services: { title: string; link: string }[];
 }
 
 export default function Service({
@@ -29,6 +29,7 @@ export default function Service({
     text1: '',
     text2: '',
     ul: [],
+    services: [],
   });
   useEffect(() => {
     TextServices({ locale, service: 'hospitality' }).then(res => setTexts(res));
@@ -44,8 +45,7 @@ export default function Service({
       <div className="service-details-area main-service-area pt-20 services-details-page">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12">
-              <Image src={img} alt="service" />
+            <div className="col-lg-8">
               <div className="service-details-post">
                 <h3 className="color-default-title">{texts.title_text}</h3>
 
@@ -63,9 +63,35 @@ export default function Service({
                 <p>{texts.text2}</p>
               </div>
             </div>
+            <div className="col-lg-4 main-service-area blog-side-bar">
+              <div className="service-sidebar">
+                <div className="service-list">
+                  <p>{texts.service}</p>
+                  <ul>
+                    {texts.services.map((item, index) => (
+                      <li key={index}>
+                        <Link href={item.link}>{item.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="discount-text">
+                  <h1>
+                    Get <span>15% Discount</span> on your first Service
+                  </h1>
+
+                  <div className="theme-button">
+                    <a href="#" className="default-btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <ContactFooter locale={locale} footer />
     </>
   );
 }

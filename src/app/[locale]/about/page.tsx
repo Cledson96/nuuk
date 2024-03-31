@@ -2,7 +2,7 @@
 
 import img from '@/img/about/about2.jpg';
 import Image from 'next/image';
-import { AboutPage } from '@/components';
+import { AboutPage, ContactFooter } from '@/components';
 import { Locale } from '@/config/i18n-config';
 import { useState, useEffect } from 'react';
 import text from './itemsServices';
@@ -118,6 +118,7 @@ export default function Page({
           </div>
         </div>
       </section>
+      <ContactFooter locale={locale} footer />
     </>
   );
 }

@@ -19,10 +19,7 @@ export default async function HeaderlItens({
       ],
       link: '/',
     },
-    {
-      title: dictionary.header.about,
-      link: '/about',
-    },
+
     {
       title: dictionary.header.services.title,
       children: [
@@ -52,6 +49,14 @@ export default async function HeaderlItens({
         },
       ],
       link: '#',
+    },
+    {
+      title: dictionary.header.about,
+      link: '/about',
+    },
+    {
+      title: dictionary.header.contact,
+      link: '/contact',
     },
   ];
 

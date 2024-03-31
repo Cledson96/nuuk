@@ -5,8 +5,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { IoIosArrowForward } from 'react-icons/io';
 import items from './itensHeader';
-
+import LocaleSwitcher from '@/components/header/locale-switcher';
+import LocaleResponsive from '@/components/header/locale-switcher-responsive';
 import { usePathname } from 'next/navigation';
+import ResponsiveItens from './responsiveItens';
+import { IoMdMenu } from 'react-icons/io';
+
 interface HeaderItem {
   title: string;
   children?: [{ title: string; link: string }];
@@ -15,6 +19,7 @@ interface HeaderItem {
 }
 export default function MenuHeader() {
   const [isSticky, setIsSticky] = useState(false);
+  const [open, setOpen] = useState(false);
   const [itens, setItens] = useState<HeaderItem[]>([]);
   const pathName = usePathname();
 
@@ -38,10 +43,33 @@ export default function MenuHeader() {
 
   return (
     <div className={`navbar-area ${isSticky ? 'sticky ' : ''}`}>
-      <div className="mobile-nav">
-        <Image src={logo} alt="logo" />
+      <div className="main-nav responsive-menu">
+        <div className="box-responsivo">
+          <nav className="navbar navbar-expand-md navbar-light">
+            <div className="top-responsive">
+              <Link className="navbar-brand" href="/">
+                <Image
+                  src={logo}
+                  style={{ width: 'auto', height: '100%' }}
+                  alt="logo"
+                />
+              </Link>
+              <LocaleResponsive />
+            </div>
+            <IoMdMenu size={30} onClick={() => setOpen(!open)} />
+            {open && (
+              <nav className="mean-nav menu-responsivo">
+                <ul className="navbar-nav ms-auto">
+                  {itens.map((item, index) => {
+                    return <ResponsiveItens item={item} key={index} />;
+                  })}
+                </ul>
+              </nav>
+            )}
+          </nav>
+        </div>
       </div>
-      <div className="main-nav">
+      <div className="main-nav normal-menu">
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <Link className="navbar-brand" href="/">
@@ -51,6 +79,7 @@ export default function MenuHeader() {
                 alt="logo"
               />
             </Link>
+
             <div className="collapse navbar-collapse mean-menu justify-content-center">
               <ul className="navbar-nav">
                 {itens.map((item, index) => {
@@ -88,7 +117,9 @@ export default function MenuHeader() {
                     </li>
                   );
                 })}
+                <LocaleSwitcher />
               </ul>
+
               <div className="navbar-button">
                 <Link href="/">{itens[0]?.button ?? ''}</Link>
               </div>

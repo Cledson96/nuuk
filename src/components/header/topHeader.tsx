@@ -3,7 +3,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaInstagram } from 'react-icons/fa';
-import LocaleSwitcher from '@/components/locale-switcher';
+
 import Link from 'next/link';
 const itens = [
   {
@@ -46,9 +46,6 @@ export default function TopHeader() {
                     </li>
                   );
                 })}
-                <li>
-                  <LocaleSwitcher />
-                </li>
               </ul>
             </div>
           </div>

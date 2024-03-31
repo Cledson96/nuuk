@@ -1,65 +1,10 @@
-/*
-@File: Viscous Template Style
-
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-** Home Page One:
-** - Default CSS
-** - Theme Defalut CSS
-** - Header Area CSS
-** - Navbar Area CSS
-** - Home Section CSS
-** - Service Scetion CSS
-** - Why Choose CSS
-** - Process Section CSS
-** - Price Section CSS
-** - Counter Section CSS
-** - Team Section CSS
-** - Testimonial Section CSS
-** - Blog Section CSS
-** - Contact Section CSS
-** - Footer Section CSS
-** - Back To Top CSS
-** - Pre Loader CSS
-
-** Home Page Two:
-** - Home Section CSS
-** - Info Section CSS
-** - Service Section CSS
-** - Hire Section CSS
-** - Process Section CSS
-** - Counter Section CSS
-** - Recent Project Section CSS
-** - Price Section CSS
-** - Team Section CSS
-
-**Home Page Three:
-** - Header Section CSS
-** - Navbar Section CSS
-** - Modal CSS
-** - Home Section CSS
-** - About Section CSS
-** - Service Section CSS
-** - Why Choose Section CSS
-** - Process Section CSS
-** - Recent project Section CSS
-** - Price Section CSS
-** - Team Section CSS
-
-** - Animation CSS
-*/
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 a.meanmenu-reveal {
   display: none;
 }
 
-/* when under viewport size, .mean-container is added to body */
+
 .mean-container .mean-bar {
   float: left;
   width: 100%;
@@ -330,6 +275,8 @@ a.meanmenu-reveal {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+
 
 .main-nav nav .navbar-nav .nav-item a:hover,
 .main-nav nav .navbar-nav .nav-item a:focus,
@@ -979,38 +926,6 @@ button:focus,
 
 
 
-.home-text {
-  max-width: 740px;
-  z-index: 1;
-  position: relative;
-}
-
-.home-text h1 {
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  text-transform: capitalize;
-  color: #ffffff;
-}
-
-.home-text p {
-  color: #ffffff;
-  margin-bottom: 50px;
-}
-
-.home-text .active-btn {
-  background: #6096fd;
-  border: 1px solid transparent;
-}
-
-.home-text .active-btn::before {
-  background: transparent;
-}
-
-.home-text .active-btn:hover {
-  background: transparent;
-  border: 1px solid #ffffff;
-}
 
 /* Home CSS End */
 /* Service CSS Start */
@@ -1231,7 +1146,7 @@ button:focus,
 /* Why Choose CSS Start */
 .why-choose-section {
   position: relative;
-  padding: 100px 0 100px;
+  padding: 50px 0 50px;
   z-index: 1;
 }
 
@@ -1256,7 +1171,7 @@ button:focus,
 }
 
 .why-choose-bg {
-
+  background-image: url('../img//home//texture.avif');
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1264,21 +1179,19 @@ button:focus,
 }
 
 .why-choose-img {
+  height: auto;
+}
 
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 750px;
-  max-width: 650px;
-  bottom: 0;
-  position: absolute;
+.why-choose-img img {
+
+  max-height: 450px;
 }
 
 .why-choose-text .section-head {
   margin: 0 0 35px;
 }
 
-.why-choose-text .section-head h2 {
+.why-choose-text .section-head h1 {
   color: #ffffff;
   margin-bottom: 30px;
   margin-top: -4px;
@@ -1313,7 +1226,7 @@ button:focus,
 
 .why-choose-accordian .accordion .card .card-header h2 a {
   font-size: 16px;
-  color: #111111;
+  color: #0a58ca;
   font-weight: 500;
   position: relative;
   display: block;
@@ -1625,12 +1538,16 @@ button:focus,
   position: relative;
   padding-bottom: 100px;
   z-index: 1;
+  background: #031888;
 }
 
 .counter-section::before {
   position: absolute;
   content: '';
-  background: #031888;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('../img//home//backgound.jpeg');
+  opacity: 0.3;
   width: 100%;
   height: 100%;
   top: 0;
@@ -1676,7 +1593,7 @@ button:focus,
 .counter-section .counter-area::before {
   position: absolute;
   content: '';
-
+  background-image: url('../img/home/map.png');
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -1934,87 +1851,7 @@ button:focus,
 }
 
 
-.testimonial-section .slick-prev:hover::before,
-.testimonial-section .slick-next:hover::before {
-  background: #ffffff;
-}
 
-.slick-prev {
-  left: 10px !important;
-  z-index: 10000 !important;
-
-}
-
-.slick-prev:before,
-.slick-next:before {
-
-  font-size: 30px !important;
-
-}
-
-.slick-next {
-  right: 20px !important;
-}
-
-.testimonial-section .slick-prev:before,
-.testimonial-section .slick-next:before {
-  height: 25px;
-  width: 16px;
-  left: -130px;
-  top: -44px;
-  position: absolute;
-  color: #031888;
-  font-family: "foundation-icons";
-  content: "<";
-  font-family: "Material-Design-Iconic-Font";
-  font-size: 33px !important;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.35);
-  width: 45px;
-  height: 45px;
-  border-radius: 45px;
-  line-height: 45px;
-  font-family: inherit;
-}
-
-.testimonial-section .slick-next:before {
-  right: -130px;
-  left: inherit;
-  content: '>';
-}
-
-.testimonial-section .slick-slider {
-  z-index: 9;
-}
-
-.testimonial-section .testimonial-area:hover .slick-prev:before,
-.testimonial-section .testimonial-area:hover .slick-next:before {
-  opacity: 1;
-}
-
-.testimonial-bg {
-
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 0;
-}
-
-.testimonial-bg::before {
-  position: absolute;
-  content: '';
-  background: #031888;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  opacity: .8;
-  z-index: -1;
-}
 
 /* Teastimonial CSS End */
 /* Blog CSS Start */
@@ -2166,7 +2003,7 @@ button:focus,
   box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
   position: relative;
   z-index: 4;
-  margin-bottom: -250px;
+
 }
 
 .contact-section .contact-area::before {
@@ -4916,9 +4753,7 @@ button:focus,
 
 /* Contact Title CSS End */
 /* Contact Info CSS Start */
-.contact-info {
-  margin-bottom: -150px;
-}
+
 
 .contact-info .contact-card-area {
   background: #031888;
@@ -4997,6 +4832,9 @@ button:focus,
 /* Contact Info CSS End */
 .map {
   height: 600px;
+  z-index: 3;
+  display: flex;
+  position: sticky;
 }
 
 .map iframe {

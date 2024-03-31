@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import img from '@/img/contact.jpg';
-import ContactsItens from './intenscontact';
+import ContactsItens from '../intenscontact';
 import { useState, useEffect } from 'react';
 interface ContactItem {
   title: string;
@@ -12,7 +12,13 @@ interface ContactItem {
   message: string;
   button: string;
 }
-export default function Contact({ locale }: { locale: 'en' | 'pt' | 'fr' }) {
+export default function Contact({
+  locale,
+  footer,
+}: {
+  locale: 'en' | 'pt' | 'fr';
+  footer?: boolean;
+}) {
   const [itens, setItens] = useState<ContactItem>({
     title: '',
     description: '',
@@ -27,7 +33,10 @@ export default function Contact({ locale }: { locale: 'en' | 'pt' | 'fr' }) {
   return (
     <div className="contact-section">
       <div className="container">
-        <div className="contact-area">
+        <div
+          className="contact-area"
+          style={footer ? { marginBottom: '-250px' } : {}}
+        >
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
               <div className="contact-img">

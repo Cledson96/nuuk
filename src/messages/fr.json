@@ -159,7 +159,10 @@
     "email": "Votre email",
     "name": "Votre nom",
     "message": "Écrivez votre message.",
-    "button": "Envoyer le message"
+    "button": "Envoyer le message",
+    "location": "Notre emplacement",
+    "phone": "Numéro de contact",
+    "mail": "Contactez-nous"
   },
   "services": {
     "title": "Services",

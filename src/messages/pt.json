@@ -160,7 +160,10 @@
     "email": "Seu email",
     "name": "Seu nome",
     "message": "Escreva sua mensagem.",
-    "button": "Enviar mensagem"
+    "button": "Enviar mensagem",
+    "location": "Localização",
+    "phone": "Telefone de contato",
+    "mail": "Email de contato"
   },
   "services": {
     "title": "Serviços",

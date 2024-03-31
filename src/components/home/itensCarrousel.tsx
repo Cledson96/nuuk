@@ -18,36 +18,42 @@ export default async function CarrouselItens({
       text: dictionary.home.slider.hospitality.description,
       image: hotelaria,
       button: dictionary.home.slider.hospitality.button,
+      link: 'services/hospitality',
     },
     {
       title: dictionary.home.slider.cleaning_commercial.title,
       text: dictionary.home.slider.cleaning_commercial.description,
       image: clean1,
       button: dictionary.home.slider.cleaning_commercial.button,
+      link: 'services/commercial-cleaning',
     },
     {
       title: dictionary.home.slider.cleaning_residential.title,
       text: dictionary.home.slider.cleaning_residential.description,
       image: clean2,
       button: dictionary.home.slider.cleaning_residential.button,
+      link: 'services/residential-cleaning',
     },
     {
       title: dictionary.home.slider.administration.title,
       text: dictionary.home.slider.administration.description,
       image: adm,
       button: dictionary.home.slider.administration.button,
+      link: 'services/administrative',
     },
     {
       title: dictionary.home.slider.industry.title,
       text: dictionary.home.slider.industry.description,
       image: industry,
       button: dictionary.home.slider.industry.button,
+      link: 'services/industry',
     },
     {
       title: dictionary.home.slider.construction.title,
       text: dictionary.home.slider.construction.description,
       image: build,
       button: dictionary.home.slider.construction.button,
+      link: 'services/construction',
     },
   ];
 

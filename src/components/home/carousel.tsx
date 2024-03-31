@@ -3,12 +3,13 @@ import Slider from 'react-slick';
 import items from './itensCarrousel';
 import Image, { StaticImageData } from 'next/image';
 import { useState, useEffect } from 'react';
-
+import Link from 'next/link';
 interface CarouselItem {
   title: string;
   text: string;
   image: StaticImageData;
   button: string;
+  link: string;
 }
 
 export default function Carousel({ locale }: { locale: 'en' | 'pt' | 'fr' }) {
@@ -41,9 +42,9 @@ export default function Carousel({ locale }: { locale: 'en' | 'pt' | 'fr' }) {
                 <p>{item.text}</p>
 
                 <div className="theme-button">
-                  <a href="about.html" className="default-btn active-btn">
+                  <Link href={item.link} className="default-btn active-btn">
                     {item.button}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

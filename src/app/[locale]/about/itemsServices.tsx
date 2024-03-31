@@ -65,28 +65,28 @@ export default async function About({
   const benefits = [
     {
       title: dictionary.about.about.benefits.equipament,
-      icon: <FaTools size={30} className="mb-3 " />,
+      icon: <FaTools size={30} className="mb-3 " color="blue" />,
     },
 
     {
       title: dictionary.about.about.benefits.reduction,
-      icon: <MdAttachMoney size={30} className="mb-3" />,
+      icon: <MdAttachMoney size={30} className="mb-3" color="blue" />,
     },
     {
       title: dictionary.about.about.benefits.responsability,
-      icon: <PiTreeThin size={30} className="mb-3" />,
+      icon: <PiTreeThin size={30} className="mb-3" color="blue" />,
     },
     {
       title: dictionary.about.about.benefits.substitution,
-      icon: <MdSwapHoriz size={30} className="mb-3" />,
+      icon: <MdSwapHoriz size={30} className="mb-3" color="blue" />,
     },
     {
       title: dictionary.about.about.benefits.supervision,
-      icon: <LiaBinocularsSolid size={30} className="mb-3" />,
+      icon: <LiaBinocularsSolid size={30} className="mb-3" color="blue" />,
     },
     {
       title: dictionary.about.about.benefits.treinament,
-      icon: <SlBookOpen size={30} className="mb-3" />,
+      icon: <SlBookOpen size={30} className="mb-3" color="blue" />,
     },
   ];
   return { itemsServices, title, about, aboutInit, benefits };

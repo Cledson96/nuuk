@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Contact from './contactFooter';
+
 import Link from 'next/link';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa6';
@@ -12,7 +12,7 @@ import { usePathname } from 'next/navigation';
 import { FooterlItens } from './itensFooter';
 import { IoIosArrowForward } from 'react-icons/io';
 import { FaLocationDot } from 'react-icons/fa6';
-import { FaPhoneAlt } from 'react-icons/fa';
+
 import { IoMail } from 'react-icons/io5';
 
 interface ServicesItem {
@@ -51,7 +51,6 @@ export default function Footer() {
 
   return (
     <>
-      <Contact locale={locale} />
       <footer className="footer-area">
         <div className="container">
           <div className="row">
@@ -99,6 +98,11 @@ export default function Footer() {
                     <a href="mailto:info@viscous.com"> info@viscous.com </a>
                   </li>
                 </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.8880288035575!2d-9.151723724903764!3d38.72037965713095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193379a7f584ab%3A0x1f2cdf439f339bf0!2sR.%20Castilho%2014C%2C%201250-165%20Lisboa%2C%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1711875011605!5m2!1spt-BR!2sbr"
+                  width="300"
+                  height="200"
+                ></iframe>
               </div>
             </div>
           </div>
