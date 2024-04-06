@@ -4,6 +4,35 @@ import items from './itensCarrousel';
 import Image, { StaticImageData } from 'next/image';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'; // Importa os ícones das setas
+import {
+  MdKeyboardDoubleArrowLeft,
+  MdKeyboardDoubleArrowRight,
+} from 'react-icons/md';
+
+const PrevArrow = (props: any) => {
+  const { onClick } = props;
+  return (
+    <div className="next-slide-right" onClick={onClick}>
+      <MdKeyboardDoubleArrowLeft
+        style={{ width: '30px', height: 'auto' }}
+        color="white"
+      />
+    </div>
+  );
+};
+
+const NextArrow = (props: any) => {
+  const { onClick } = props;
+  return (
+    <div className="next-slide-left " onClick={onClick}>
+      <MdKeyboardDoubleArrowRight
+        style={{ width: '30px', height: 'auto' }}
+        color="white"
+      />
+    </div>
+  );
+};
 interface CarouselItem {
   title: string;
   text: string;
@@ -28,6 +57,8 @@ export default function Carousel({ locale }: { locale: 'en' | 'pt' | 'fr' }) {
     autoplay: true,
     waitForAnimate: true,
     fade: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (

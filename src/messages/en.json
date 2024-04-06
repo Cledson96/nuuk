@@ -92,7 +92,7 @@
   "header": {
     "home": {
       "title": "Home",
-      "button": "Get Quote",
+      "button": "Work with us",
       "children": {
         "service": "Services"
       }
@@ -167,8 +167,10 @@
   "services": {
     "title": "Services",
     "service": {
-      "administration": {
+      "administrative": {
         "title": "Administrative",
+        "link": "/services/administrative",
+        "img": "services/adm.jpg",
         "title_text": "Administrative Service / Reception",
         "text1": "In the corporate environment, efficiency and administrative organization are fundamental. A well-prepared team ensures all internal processes flow without interruptions, ensuring a productive work environment. From agenda management to telephone service, every detail is crucial to maintaining harmony and efficiency in the workplace. In an ever-faster world, it is vital to have an administrative service that not only meets but anticipates the needs of the company.",
         "ul": [
@@ -181,9 +183,11 @@
         ],
         "text2": "The basis of any successful business lies in its ability to keep everything organized and running smoothly. Administrative services play a crucial role, acting as the heart of the company, where all vital functions are monitored and managed. A dedicated and attentive team can transform the work dynamics, raising the level of professionalism and efficiency. Investing in quality administrative services is investing in the future of the company."
       },
-      "cleaning_commercial": {
+      "commercial-cleaning": {
         "title": "Commercial Cleaning",
         "title_text": "Commercial Cleaning",
+        "img": "services/com.jpg",
+        "link": "/services/commercial-cleaning",
         "text1": "Maintaining a clean and attractive commercial environment is essential for any business's image. A clean space not only provides a healthier work environment but also conveys a strong sense of professionalism and attention to detail to customers and visitors. Comprehensive commercial cleaning services ensure that from the lobby to the offices and meeting rooms, every inch of the establishment reflects excellence and commitment to quality.",
         "ul": [
           "Environment disinfection",
@@ -197,6 +201,8 @@
       },
       "construction": {
         "title": "Civil Construction",
+        "link": "/services/construction",
+        "img": "services/cons.jpeg",
         "title_text": "Civil Construction",
         "text1": "Civil construction is the backbone of urban development, turning architectural visions into tangible realities. Each project is a promise of renewal and innovation, where every detail counts in creating spaces that will house people's daily lives. It is essential to have a civil construction team that combines technical skill with an unwavering commitment to quality, ensuring that each building is not just a structure, but a home for future generations.",
         "ul": [
@@ -212,6 +218,8 @@
       "hospitality": {
         "title": "Hospitality",
         "title_text": "Hospitality",
+        "img": "services/hot.jpeg",
+        "link": "/services/hospitality",
         "text1": "The hospitality industry is based on the art of making guests feel at home, even when they are far from it. Every detail, from the warm reception to the meticulously prepared rooms, is designed to provide an unforgettable experience. The hospitality service must transcend expectations, offering an environment that combines comfort, luxury, and maximum attention to the guests' needs. It is the dedication to excellence that sets the standards for true hospitality.",
         "ul": [
           "Guest welcoming",
@@ -226,6 +234,8 @@
       "industry": {
         "title": "Industry",
         "title_text": "Industrial Maintenance",
+        "link": "/services/industry",
+        "img": "services/ind.jpg",
         "text1": "The industrial sector is the engine of progress, driving innovation and development on a global scale. Industrial maintenance ensures this engine continues to run efficiently, maximizing productivity and minimizing unplanned shutdowns. From machinery supervision to complex systems management, every aspect of maintenance is vital to maintain the integrity and effectiveness of industrial operations. It is the commitment to operational excellence that underpins long-term success.",
         "ul": [
           "Machinery maintenance",
@@ -237,9 +247,11 @@
         ],
         "text2": "In the industry, every second counts, and efficiency is measured not just in terms of production but also in the ability to anticipate and prevent problems before they occur. Industrial maintenance plays a crucial role in this context, acting as the line of defense that ensures the continuity of operations. Investing in high-quality maintenance services is investing in the very foundation of industrial success, ensuring that the innovation machine continues to advance without interruptions."
       },
-      "cleaning_residential": {
+      "residential-cleaning": {
         "title": "Residential Cleaning",
         "title_text": "Residential Cleaning",
+        "img": "services/res.jpeg",
+        "link": "/services/residential-cleaning",
         "text1": "The home is more than a physical space; it's a haven of comfort and safety. Residential cleaning is fundamental to maintaining this sanctuary not only visually pleasing but also healthy for all who live there. Detailed residential cleaning services range from daily tasks to occasional deep cleanings, ensuring every corner of the house is free from dust and clutter. It's the attention to detail that transforms a house into a home.",
         "ul": [
           "Environment sanitization",
@@ -250,7 +262,64 @@
           "Space organization"
         ],
         "text2": "In a bustling world, time at home is a valuable treasure. Residential cleaning relieves residents of household chores, allowing them to devote more time to what truly matters: family and together moments. Cleaning professionals bring not only skill and efficiency to the job but also a sense of care and respect for personal space. They play a quiet, yet vital role in maintaining the home as a space of peace and joy."
+      },
+      "restoration": {
+        "title": "Restoration",
+        "title_text": "Restoration Services",
+        "img": "services/res.jpg",
+        "link": "/services/restoration",
+        "text1": "Restoring is about bringing new life to what has been damaged or worn over time, be it a historic building, a piece of art, or an antique piece of furniture. Our restoration experts blend traditional techniques with modern technologies to preserve the original integrity and beauty of objects. We understand the importance of each detail in the restoration process, ensuring that each project is handled with the utmost care and professionalism.",
+        "ul": [
+          "Restoration of historic buildings",
+          "Conservation of artworks",
+          "Repair of antique furniture",
+          "Restoration of documents and books",
+          "Special coatings and finishes",
+          "Analysis and diagnostics for conservation"
+        ],
+        "text2": "The art of restoration requires not just technical skill, but also a deep appreciation for the history and culture each item represents. Our commitment to excellence in restoration aims not only to recover functionality but also to reinvigorate the soul of the objects, allowing them to tell their stories for many generations. Investing in restoration services is investing in the preservation of our cultural and historical heritage."
+      },
+      "temporary": {
+        "title": "Temporary Job",
+        "title_text": "Temporary Work Services",
+        "img": "services/temp.png",
+        "link": "/services/temporary",
+        "text1": "In today’s dynamic job market, temporary work services offer flexibility for both companies and workers. Our agency specializes in connecting qualified talents with temporary opportunities across various sectors, ensuring businesses maintain productivity during peak demand periods or employee replacements. For professionals, it’s a chance to gain diverse experience and develop new skills in challenging environments.",
+        "ul": [
+          "Recruitment and selection of talents",
+          "Management of temporary contracts",
+          "HR support for companies",
+          "Opportunities across various sectors",
+          "Professional development for temporary staff",
+          "Quick adaptation to company culture"
+        ],
+        "text2": "Temporary work services represent a strategic solution for both company growth and career advancement of professionals. Through effective management, we ensure that each placement is an opportunity for both parties to achieve their goals, promoting a productive and enriching work environment. Employing or being employed on a temporary basis opens doors to new possibilities and flexibility in the professional world."
       }
+    }
+  },
+  "work": {
+    "title": "Work with us",
+    "subtitle": "Join our team",
+    "description": "We are always looking for talents to join our team. If you are passionate about excellence and want to be part of a company that values commitment and innovation, send us your resume.",
+    "button": "Send resume",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "age": "Age",
+      "phone": "Phone",
+      "phone_contact": "Contact phone",
+      "file": "Attach resume",
+      "message": "Message",
+      "street": "Street",
+      "number": "Number",
+      "city": "City",
+      "district": "District",
+      "state": "State",
+      "country": "Country",
+      "zip": "ZIP",
+      "complement": "Complement",
+      "button": "Send",
+      "workspace": "Field of work"
     }
   }
 }

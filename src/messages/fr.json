@@ -43,27 +43,33 @@
       "service": {
         "administration": {
           "title": "Administratif",
-          "description": "Gestion et support administratif pour entreprises."
+          "description": "Gestion et support administratif pour entreprises.",
+          "link": "/services/administrative"
         },
         "cleaning_commercial": {
           "title": "Nettoyage Commercial",
-          "description": "Services de nettoyage pour les environnements commerciaux, assurant hygiène et confort."
+          "description": "Services de nettoyage pour les environnements commerciaux, assurant hygiène et confort.",
+          "link": "/services/commercial-cleaning"
         },
         "construction": {
           "title": "Construction",
-          "description": "Projets et exécutions de construction civile de qualité et en sécurité."
+          "description": "Projets et exécutions de construction civile de qualité et en sécurité.",
+          "link": "/services/construction"
         },
         "hospitality": {
           "title": "Hôtellerie",
-          "description": "Services d'excellence en hospitalité et hébergement."
+          "description": "Services d'excellence en hospitalité et hébergement.",
+          "link": "/services/hospitality"
         },
         "industry": {
           "title": "Industrie",
-          "description": "Solutions industrielles innovantes pour optimiser la production."
+          "description": "Solutions industrielles innovantes pour optimiser la production.",
+          "link": "/services/industry"
         },
         "cleaning_residential": {
           "title": "Nettoyage Résidentiel",
-          "description": "Nettoyage et organisation pour les résidences, procurant bien-être."
+          "description": "Nettoyage et organisation pour les résidences, procurant bien-être.",
+          "link": "/services/residential-cleaning"
         }
       }
     },
@@ -92,7 +98,7 @@
   "header": {
     "home": {
       "title": "Accueil",
-      "button": "obtenir un devis",
+      "button": "Travaille avec nous",
       "children": {
         "service": "Services"
       }
@@ -167,9 +173,11 @@
   "services": {
     "title": "Services",
     "service": {
-      "administration": {
+      "administrative": {
         "title": "Administratif",
         "title_text": "Service Administratif / Réception",
+        "img": "services/adm.jpg",
+        "link": "/services/administrative",
         "text1": "Dans l'environnement d'entreprise, l'efficacité et l'organisation administrative sont fondamentales. Une équipe bien préparée assure le bon déroulement de tous les processus internes sans interruption, garantissant un environnement de travail productif. De la gestion des agendas au service téléphonique, chaque détail est crucial pour maintenir l'harmonie et l'efficacité sur le lieu de travail. Dans un monde de plus en plus rapide, il est vital d'avoir un service administratif qui ne se contente pas de répondre, mais anticipe les besoins de l'entreprise.",
         "ul": [
           "Réception",
@@ -181,9 +189,11 @@
         ],
         "text2": "La base de toute entreprise réussie réside dans sa capacité à tout garder organisé et fonctionnant sans problème. Les services administratifs jouent un rôle crucial, agissant comme le cœur de l'entreprise, où toutes les fonctions vitales sont surveillées et gérées. Une équipe dédiée et attentive peut transformer la dynamique de travail, élevant le niveau de professionnalisme et d'efficacité. Investir dans des services administratifs de qualité est investir dans l'avenir de l'entreprise."
       },
-      "cleaning_commercial": {
+      "commercial-cleaning": {
         "title": "Nettoyage Commercial",
         "title_text": "Nettoyage Commercial",
+        "img": "services/com.jpg",
+        "link": "/services/commercial-cleaning",
         "text1": "Maintenir un environnement commercial propre et attrayant est essentiel pour l'image de toute entreprise. Un espace propre offre non seulement un environnement de travail plus sain, mais transmet également aux clients et visiteurs un fort sens du professionnalisme et de l'attention aux détails. Des services de nettoyage commercial complets assurent que, du hall d'entrée aux bureaux et salles de réunion, chaque centimètre de l'établissement reflète l'excellence et l'engagement envers la qualité.",
         "ul": [
           "Désinfection des environnements",
@@ -198,6 +208,8 @@
       "construction": {
         "title": "Construction Civile",
         "title_text": "Construction Civile",
+        "img": "services/cons.jpeg",
+        "link": "/services/construction",
         "text1": "La construction civile est l'épine dorsale du développement urbain, transformant les visions architecturales en réalités tangibles. Chaque projet est une promesse de renouveau et d'innovation, où chaque détail compte dans la création d'espaces qui abriteront la vie quotidienne des gens. Il est essentiel de disposer d'une équipe de construction civile alliant compétence technique et engagement indéfectible envers la qualité, assurant que chaque bâtiment soit non seulement une structure, mais un foyer pour les générations futures.",
         "ul": [
           "Gestion de projet",
@@ -212,6 +224,8 @@
       "hospitality": {
         "title": "Hôtellerie",
         "title_text": "Hôtellerie",
+        "img": "services/hot.jpeg",
+        "link": "/services/hospitality",
         "text1": "L'industrie de l'hôtellerie repose sur l'art de faire sentir les invités chez eux, même lorsqu'ils sont loin de chez eux. Chaque détail, de l'accueil chaleureux aux chambres méticuleusement préparées, est conçu pour fournir une expérience inoubliable. Le service hôtelier doit transcender les attentes, offrant un environnement qui combine confort, luxe et une attention maximale aux besoins des invités. C'est le dévouement à l'excellence qui définit les standards de la véritable hospitalité.",
         "ul": [
           "Accueil des invités",
@@ -226,6 +240,8 @@
       "industry": {
         "title": "Industrie",
         "title_text": "Maintenance Industrielle",
+        "img": "services/ind.jpg",
+        "link": "/services/industry",
         "text1": "Le secteur industriel est le moteur du progrès, poussant l'innovation et le développement à l'échelle mondiale. La maintenance industrielle assure que ce moteur continue de fonctionner efficacement, maximisant la productivité et minimisant les arrêts non planifiés. De la supervision des machines à la gestion des systèmes complexes, chaque aspect de la maintenance est vital pour maintenir l'intégrité et l'efficacité des opérations industrielles. C'est l'engagement envers l'excellence opérationnelle qui sous-tend le succès à long terme.",
         "ul": [
           "Maintenance des machines",
@@ -237,9 +253,11 @@
         ],
         "text2": "Dans l'industrie, chaque seconde compte et l'efficacité est mesurée non seulement en termes de production, mais aussi dans la capacité à anticiper et à prévenir les problèmes avant qu'ils ne surviennent. La maintenance industrielle joue un rôle crucial dans ce contexte, agissant comme la ligne de défense qui assure la continuité des opérations. Investir dans des services de maintenance de haute qualité est investir dans la fondation même du succès industriel, assurant que la machine d'innovation continue d'avancer sans interruptions."
       },
-      "cleaning_residential": {
+      "residential-cleaning": {
         "title": "Nettoyage Résidentiel",
         "title_text": "Nettoyage Résidentiel",
+        "img": "services/res.jpeg",
+        "link": "/services/residential-cleaning",
         "text1": "La maison est plus qu'un espace physique ; c'est un havre de confort et de sécurité. Le nettoyage résidentiel est fondamental pour maintenir ce sanctuaire non seulement agréable visuellement, mais aussi sain pour tous ceux qui y vivent. Les services de nettoyage résidentiel détaillés vont des tâches quotidiennes aux nettoyages en profondeur occasionnels, assurant que chaque coin de la maison est libre de poussière et de désordre. C'est l'attention aux détails qui transforme une maison en un foyer.",
         "ul": [
           "Assainissement de l'environnement",
@@ -250,7 +268,64 @@
           "Organisation des espaces"
         ],
         "text2": "Dans un monde trépidant, le temps passé à la maison est un trésor précieux. Le nettoyage résidentiel soulage les résidents des tâches ménagères, leur permettant de consacrer plus de temps à ce qui compte vraiment : la famille et les moments ensemble. Les professionnels du nettoyage apportent non seulement compétence et efficacité au travail, mais aussi un sens du soin et du respect de l'espace personnel. Ils jouent un rôle silencieux, mais vital, dans le maintien de la maison comme un espace de paix et de joie."
+      },
+      "restoration": {
+        "title": "Restauration",
+        "title_text": "Services de Restauration",
+        "img": "services/res.jpg",
+        "link": "/services/restoration",
+        "text1": "Restaurer, c'est donner une nouvelle vie à ce qui a été endommagé ou usé par le temps, qu'il s'agisse d'un bâtiment historique, d'une œuvre d'art ou d'un meuble ancien. Nos experts en restauration combinent des techniques traditionnelles avec des technologies modernes pour préserver l'intégrité et la beauté originale des objets. Nous comprenons l'importance de chaque détail dans le processus de restauration, assurant que chaque projet est traité avec le plus grand soin et professionnalisme.",
+        "ul": [
+          "Restauration de bâtiments historiques",
+          "Conservation d'œuvres d'art",
+          "Réparation de meubles anciens",
+          "Restauration de documents et livres",
+          "Revêtements et finitions spéciales",
+          "Analyse et diagnostic pour la conservation"
+        ],
+        "text2": "L'art de la restauration exige non seulement une compétence technique, mais aussi une profonde appréciation de l'histoire et de la culture que chaque objet représente. Notre engagement envers l'excellence dans la restauration vise non seulement à récupérer la fonctionnalité, mais aussi à raviver l'âme des objets, leur permettant de raconter leurs histoires pour de nombreuses générations. Investir dans les services de restauration, c'est investir dans la préservation de notre patrimoine culturel et historique."
+      },
+      "temporary": {
+        "title": "Travail Temporaire",
+        "title_text": "Services de Travail Temporaire",
+        "img": "services/temp.png",
+        "link": "/services/temporary",
+        "text1": "Dans le marché du travail dynamique d'aujourd'hui, les services de travail temporaire offrent de la flexibilité tant pour les entreprises que pour les travailleurs. Notre agence se spécialise dans la connexion de talents qualifiés avec des opportunités temporaires dans divers secteurs, assurant que les entreprises maintiennent leur productivité pendant les périodes de forte demande ou le remplacement des employés. Pour les professionnels, c'est une chance d'acquérir une expérience diversifiée et de développer de nouvelles compétences dans des environnements stimulants.",
+        "ul": [
+          "Recrutement et sélection de talents",
+          "Gestion des contrats temporaires",
+          "Support RH pour les entreprises",
+          "Opportunités dans divers secteurs",
+          "Développement professionnel pour le personnel temporaire",
+          "Adaptation rapide à la culture de l'entreprise"
+        ],
+        "text2": "Les services de travail temporaire représentent une solution stratégique tant pour la croissance des entreprises que pour l'avancement de la carrière des professionnels. Grâce à une gestion efficace, nous assurons que chaque placement est une opportunité pour les deux parties d'atteindre leurs objectifs, promouvant un environnement de travail productif et enrichissant. Employer ou être employé de manière temporaire ouvre les portes à de nouvelles possibilités et à la flexibilité dans le monde professionnel."
       }
+    }
+  },
+  "work": {
+    "title": "Travaillez avec nous",
+    "subtitle": "Rejoignez notre équipe",
+    "description": "Nous sommes toujours à la recherche de talents pour rejoindre notre équipe. Si vous êtes passionné par l'excellence et souhaitez faire partie d'une entreprise qui valorise l'engagement et l'innovation, envoyez-nous votre CV.",
+    "button": "Envoyer le CV",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "age": "Âge",
+      "phone": "Téléphone",
+      "phone_contact": "Téléphone de contact",
+      "file": "Joindre le CV",
+      "message": "Message",
+      "district": "Quartier",
+      "street": "Rue",
+      "number": "Numéro",
+      "city": "Ville",
+      "state": "État",
+      "country": "Pays",
+      "zip": "Code postal",
+      "complement": "Complément",
+      "button": "Envoyer",
+      "workspace": "Domaine d'activité"
     }
   }
 }

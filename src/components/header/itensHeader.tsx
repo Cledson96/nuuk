@@ -7,6 +7,12 @@ export default async function HeaderlItens({
 }) {
   const dictionary = await getDictionary(locale);
 
+  const services = Object.values(dictionary.services.service).map(service => {
+    return {
+      title: service.title,
+      link: service.link,
+    };
+  });
   const itens = [
     {
       title: dictionary.header.home.title,
@@ -22,32 +28,7 @@ export default async function HeaderlItens({
 
     {
       title: dictionary.header.services.title,
-      children: [
-        {
-          title: dictionary.header.services.children.administration.title,
-          link: '/services/administrative',
-        },
-        {
-          title: dictionary.header.services.children.cleaning_commercial.title,
-          link: '/services/commercial-cleaning',
-        },
-        {
-          title: dictionary.header.services.children.cleaning_residential.title,
-          link: '/services/residential-cleaning',
-        },
-        {
-          title: dictionary.header.services.children.construction.title,
-          link: '/services/construction',
-        },
-        {
-          title: dictionary.header.services.children.hospitality.title,
-          link: '/services/hospitality',
-        },
-        {
-          title: dictionary.header.services.children.industry.title,
-          link: '/services/industry',
-        },
-      ],
+      children: services,
       link: '#',
     },
     {

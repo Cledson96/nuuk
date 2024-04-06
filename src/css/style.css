@@ -513,7 +513,7 @@ button:focus,
   margin-right: 25px;
   position: relative;
   text-transform: capitalize;
-  border: 1px solid #ffffff;
+
   z-index: 0;
 }
 

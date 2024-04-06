@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import logo from '@/img/logo-azul-cortada.png';
+import logo from '@/img/logo-wide.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoIosArrowForward } from 'react-icons/io';
@@ -121,7 +121,7 @@ export default function MenuHeader() {
               </ul>
 
               <div className="navbar-button">
-                <Link href="/">{itens[0]?.button ?? ''}</Link>
+                <Link href="/work">{itens[0]?.button ?? ''}</Link>
               </div>
             </div>
           </nav>

@@ -93,7 +93,7 @@
   "header": {
     "home": {
       "title": "Início",
-      "button": "Faça uma cotação",
+      "button": "Trabalhe conosco",
       "children": {
         "service": "Serviços"
       }
@@ -168,9 +168,11 @@
   "services": {
     "title": "Serviços",
     "service": {
-      "administration": {
+      "administrative": {
         "title": "Administrativo",
         "title_text": "Serviço Administrativo / Recepção",
+        "img": "services/adm.jpg",
+        "link": "/services/administrative",
         "text1": "No ambiente corporativo, a eficiência e a organização administrativa são fundamentais. Uma equipe bem preparada assegura que todos os processos internos fluam sem interrupções, garantindo um ambiente de trabalho produtivo. Desde o gerenciamento de agendas até o atendimento telefônico, cada detalhe é crucial para manter a harmonia e a eficiência no local de trabalho. Em um mundo cada vez mais rápido, é vital contar com um serviço administrativo que não apenas atenda, mas antecipe as necessidades da empresa.",
         "ul": [
           "Recepção",
@@ -182,9 +184,11 @@
         ],
         "text2": "A base de qualquer negócio de sucesso reside em sua capacidade de manter tudo organizado e funcionando sem problemas. Os serviços administrativos desempenham um papel crucial, atuando como o coração da empresa, onde todas as funções vitais são monitoradas e gerenciadas. Uma equipe dedicada e atenta pode transformar a dinâmica de trabalho, elevando o nível de profissionalismo e eficácia. Investir em serviços administrativos de qualidade é investir no futuro da empresa."
       },
-      "cleaning_commercial": {
+      "commercial-cleaning": {
         "title": "Limpeza comercial",
         "title_text": "⁠Limpeza Comercial",
+        "img": "services/com.jpg",
+        "link": "/services/commercial-cleaning",
         "text1": "Manter um ambiente comercial limpo e atraente é essencial para a imagem de qualquer negócio. Um espaço limpo não apenas proporciona um ambiente de trabalho mais saudável, mas também transmite aos clientes e visitantes um forte senso de profissionalismo e atenção aos detalhes. Serviços de limpeza comercial abrangentes garantem que desde o lobby até os escritórios e salas de reunião, cada centímetro do estabelecimento reflita a excelência e o compromisso com a qualidade.",
         "ul": [
           "Desinfecção de ambientes",
@@ -199,6 +203,8 @@
       "construction": {
         "title": "Construção civil",
         "title_text": "Construção civil",
+        "img": "services/cons.jpeg",
+        "link": "/services/construction",
         "text1": "A construção civil é a espinha dorsal do desenvolvimento urbano, transformando visões arquitetônicas em realidades tangíveis. Cada projeto é uma promessa de renovação e inovação, onde cada detalhe conta na criação de espaços que irão abrigar a vida cotidiana das pessoas. É essencial contar com uma equipe de construção civil que combine habilidade técnica com um compromisso inabalável com a qualidade, garantindo que cada edifício seja não apenas uma estrutura, mas um lar para as futuras gerações.",
         "ul": [
           "Gestão de obras",
@@ -213,6 +219,8 @@
       "hospitality": {
         "title": "Hotelaria",
         "title_text": "Hotelaria",
+        "link": "/services/hospitality",
+        "img": "services/hot.jpeg",
         "text1": "A indústria da hotelaria é fundamentada na arte de fazer os hóspedes se sentirem em casa, mesmo estando longe dela. Cada detalhe, da recepção calorosa aos quartos meticulosamente preparados, é pensado para proporcionar uma experiência inesquecível. O serviço de hotelaria deve transcender as expectativas, oferecendo um ambiente que combina conforto, luxo e a máxima atenção às necessidades dos hóspedes. É a dedicação à excelência que define os padrões da verdadeira hospitalidade.",
         "ul": [
           "Acolhimento de hóspedes",
@@ -227,6 +235,8 @@
       "industry": {
         "title": "Indústria",
         "title_text": "Manutenção Industrial",
+        "link": "/services/industry",
+        "img": "services/ind.jpg",
         "text1": "O setor industrial é o motor do progresso, impulsionando a inovação e o desenvolvimento em uma escala global. A manutenção industrial assegura que este motor continue a funcionar de forma eficiente, maximizando a produtividade e minimizando as paradas não planejadas. Desde a supervisão de máquinas até a gestão de sistemas complexos, cada aspecto da manutenção é vital para manter a integridade e a eficácia das operações industriais. É o compromisso com a excelência operacional que sustenta o sucesso a longo prazo.",
         "ul": [
           "Manutenção de maquinário",
@@ -238,9 +248,11 @@
         ],
         "text2": "Na indústria, cada segundo conta e a eficiência é medida não apenas em termos de produção, mas também na capacidade de antecipar e prevenir problemas antes que eles ocorram. A manutenção industrial desempenha um papel crucial nesse contexto, atuando como a linha de defesa que garante a continuidade das operações. Investir em serviços de manutenção de alta qualidade é investir na própria fundação do sucesso industrial, garantindo que a máquina da inovação continue avançando sem interrupções."
       },
-      "cleaning_residential": {
+      "residential-cleaning": {
         "title": "Limpeza Residencial",
+        "link": "/services/residential-cleaning",
         "title_text": "Limpeza Residencial",
+        "img": "services/res.jpeg",
         "text1": "O lar é mais do que um espaço físico; é um refúgio de conforto e segurança. A limpeza residencial é fundamental para manter este santuário não apenas visualmente agradável, mas também saudável para todos que nele residem. Serviços de limpeza residencial detalhados abrangem desde tarefas diárias até limpezas profundas ocasionais, assegurando que cada canto da casa esteja livre de poeira e desordem. É a atenção aos detalhes que transforma uma casa em um lar.",
         "ul": [
           "Higienização de ambientes",
@@ -251,7 +263,64 @@
           "Organização de espaços"
         ],
         "text2": "Em um mundo agitado, o tempo em casa é um tesouro valioso. A limpeza residencial alivia os moradores das tarefas domésticas, permitindo que eles dediquem mais tempo ao que realmente importa: a família e os momentos juntos. Profissionais de limpeza trazem não apenas habilidade e eficiência para o trabalho, mas também um senso de cuidado e respeito pelo espaço pessoal. Eles desempenham um papel silencioso, porém vital, em manter o lar como um espaço de paz e alegria."
+      },
+      "restoration": {
+        "title": "Restauração",
+        "link": "/services/restoration",
+        "img": "services/res.jpg",
+        "title_text": "Serviços de Restauração",
+        "text1": "Restaurar é trazer nova vida ao que foi danificado ou desgastado pelo tempo, seja um edifício histórico, uma obra de arte, ou um móvel antigo. Nossos especialistas em restauração combinam técnicas tradicionais com tecnologias modernas para preservar a integridade e a beleza original dos objetos. Entendemos a importância de cada detalhe no processo de restauração, assegurando que cada projeto seja tratado com o máximo cuidado e profissionalismo.",
+        "ul": [
+          "Restauração de edifícios históricos",
+          "Conservação de obras de arte",
+          "Reparação de móveis antigos",
+          "Restauração de documentos e livros",
+          "Revestimento e acabamentos especiais",
+          "Análise e diagnóstico para conservação"
+        ],
+        "text2": "A arte da restauração exige não apenas habilidade técnica, mas também uma profunda apreciação pela história e cultura que cada item representa. Nosso compromisso com a excelência em restauração visa não apenas recuperar a funcionalidade, mas também reavivar a alma dos objetos, permitindo que eles contem suas histórias por muitas gerações. Investir em serviços de restauração é investir na preservação da nossa herança cultural e histórica."
+      },
+      "temporary": {
+        "title": "Trabalho Temporário",
+        "link": "/services/temporary",
+        "img": "services/temp.png",
+        "title_text": "Serviços de Trabalho Temporário",
+        "text1": "No dinâmico mercado de trabalho atual, os serviços de trabalho temporário oferecem flexibilidade tanto para empresas quanto para trabalhadores. Nossa agência especializa-se em conectar talentos qualificados com oportunidades temporárias em diversos setores, assegurando que as empresas mantenham sua produtividade em períodos de alta demanda ou substituição de funcionários. Para os profissionais, é a chance de ganhar experiência diversificada e desenvolver novas habilidades em ambientes desafiadores.",
+        "ul": [
+          "Recrutamento e seleção de talentos",
+          "Gestão de contratos temporários",
+          "Suporte em RH para empresas",
+          "Oportunidades em diversos setores",
+          "Desenvolvimento profissional para temporários",
+          "Adaptação rápida à cultura da empresa"
+        ],
+        "text2": "Os serviços de trabalho temporário representam uma solução estratégica tanto para o crescimento das empresas quanto para o avanço da carreira dos profissionais. Através de uma gestão eficaz, garantimos que cada colocação seja uma oportunidade para ambas as partes alcançarem seus objetivos, promovendo um ambiente de trabalho produtivo e enriquecedor. Empregar ou ser empregado de forma temporária abre portas para novas possibilidades e flexibilidade no mundo profissional."
       }
+    }
+  },
+  "work": {
+    "title": "Trabalhe conosco",
+    "subtitle": "Faça parte da nossa equipe",
+    "description": "Estamos sempre em busca de talentos para fazer parte da nossa equipe. Se você é apaixonado por excelência e deseja fazer parte de uma empresa que valoriza o comprometimento e a inovação, envie seu currículo para nós.",
+    "button": "Enviar currículo",
+    "form": {
+      "name": "Nome completo",
+      "email": "Email",
+      "age": "Idade",
+      "phone": "Telefone",
+      "phone_contact": "Telefone para contato",
+      "file": "Anexar currículo",
+      "message": "Mensagem",
+      "street": "Rua",
+      "number": "Número",
+      "district": "Bairro",
+      "city": "Cidade",
+      "state": "Estado",
+      "country": "País",
+      "zip": "CEP",
+      "complement": "Complemento",
+      "button": "Enviar",
+      "workspace": "Área de atuação"
     }
   }
 }

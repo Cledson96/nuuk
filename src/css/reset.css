@@ -41,63 +41,6 @@ a {
     color: inherit;
 }
 
-/* Remove form styles */
-button,
-input,
-select,
-textarea {
-
-    font-size: inherit;
-    line-height: inherit;
-}
-
-/* Remove button styles */
-button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline: none;
-}
-
-/* Remove input styles */
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-input[type="search"],
-textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-}
-
-/* Remove default button styles */
-button::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-/* Remove default outline styles */
-:focus {
-    outline: none;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Set default font family and size */
 body {
 
     font-size: 16px;
@@ -116,12 +59,7 @@ h6 {
 }
 
 /* Reset form elements */
-input,
-textarea,
-select,
-button {
-    font: inherit;
-}
+
 
 /* Reset anchor styles */
 a {
@@ -129,11 +67,8 @@ a {
     text-decoration: none;
 }
 
-/* Remove text selection */
-::selection {
-    background-color: transparent;
-    color: inherit;
-}
+
+
 
 /* Set default cursor */
 body {

@@ -12,14 +12,15 @@ interface Text {
   title_text: string;
   text1: string;
   text2: string;
+  img: string;
   ul: string[];
   services: { title: string; link: string }[];
 }
 
 export default function Service({
-  params: { locale },
+  params: { locale, service },
 }: {
-  params: { locale: Locale };
+  params: { locale: Locale; service: string };
 }) {
   const [texts, setTexts] = useState<Text>({
     service: '',
@@ -28,22 +29,17 @@ export default function Service({
     title_text: '',
     text1: '',
     text2: '',
+    img: '',
     ul: [],
     services: [],
   });
   useEffect(() => {
-    TextServices({ locale, service: 'cleaning_residential' }).then(res =>
-      setTexts(res),
-    );
+    TextServices({ locale, service }).then(res => setTexts(res));
   }, [locale]);
 
   return (
     <>
-      <AboutPage
-        image="services/res.jpeg"
-        title={texts.title}
-        home={texts.home}
-      />
+      <AboutPage image={texts.img} title={texts.title} home={texts.home} />
       <div className="service-details-area main-service-area pt-20 services-details-page">
         <div className="container">
           <div className="row">

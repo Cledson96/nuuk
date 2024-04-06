@@ -4,6 +4,7 @@ import Image from 'next/image';
 import img from '@/img/contact.jpg';
 import ContactsItens from '../intenscontact';
 import { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 interface ContactItem {
   title: string;
   name: string;
@@ -19,6 +20,12 @@ export default function Contact({
   locale: 'en' | 'pt' | 'fr';
   footer?: boolean;
 }) {
+  const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
   const [itens, setItens] = useState<ContactItem>({
     title: '',
     description: '',
@@ -30,6 +37,37 @@ export default function Contact({
   useEffect(() => {
     ContactsItens({ locale }).then(res => setItens(res));
   }, [locale]);
+
+  const send = () => {
+    setLoading(true);
+    handleSubmit();
+  };
+  const handleSubmit = async () => {
+    try {
+      setLoading(true);
+      const resposta = await fetch('/api/email/contact', {
+        method: 'POST',
+        body: JSON.stringify(form),
+      });
+
+      if (resposta.status === 200) {
+        toast.success('resume sent successfully!');
+        setLoading(false);
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        });
+      } else {
+        toast.error('Error sending resume');
+      }
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+      toast.error('Error sending resume');
+    }
+  };
+
   return (
     <div className="contact-section">
       <div className="container">
@@ -55,17 +93,19 @@ export default function Contact({
                   <p> {itens.description}</p>
                 </div>
                 <div className="contact-form">
-                  <form id="contactForm">
+                  <form action={send} id="contactForm">
                     <div className="row">
                       <div className="col-md-12 col-sm-6">
                         <div className="form-group">
                           <input
                             type="text"
                             name="name"
-                            id="name"
                             className="form-control"
+                            value={form.name}
+                            onChange={e =>
+                              setForm({ ...form, name: e.target.value })
+                            }
                             required
-                            data-error="Please enter your name"
                             placeholder={itens.name}
                           />
                           <div className="help-block with-errors"></div>
@@ -77,10 +117,12 @@ export default function Contact({
                           <input
                             type="email"
                             name="email"
-                            id="email"
+                            value={form.email}
+                            onChange={e =>
+                              setForm({ ...form, email: e.target.value })
+                            }
                             className="form-control"
                             required
-                            data-error="Please enter your email"
                             placeholder={itens.email}
                           />
                           <div className="help-block with-errors"></div>
@@ -91,10 +133,12 @@ export default function Contact({
                         <div className="form-group">
                           <textarea
                             name="message"
+                            value={form.message}
+                            onChange={e =>
+                              setForm({ ...form, message: e.target.value })
+                            }
                             className="form-control"
-                            id="message"
                             required
-                            data-error="Write your message"
                             placeholder={itens.message}
                           ></textarea>
                           <div className="help-block with-errors"></div>
@@ -102,7 +146,11 @@ export default function Contact({
                       </div>
 
                       <div className="col-lg-12 col-md-12">
-                        <button type="submit" className="default-btn page-btn">
+                        <button
+                          type="submit"
+                          disabled={loading}
+                          className="default-btn page-btn"
+                        >
                           {itens.button}
                         </button>
                         <div
